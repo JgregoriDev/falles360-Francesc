@@ -1,4 +1,5 @@
 .header {
+  background: var(--fifthColor);
   display: flex;
   align-items: center;
 }
