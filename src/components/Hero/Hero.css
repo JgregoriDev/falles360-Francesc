@@ -1,0 +1,54 @@
+.Hero__container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.Hero__container--titles{
+    display: flex;
+    margin-left: 10%;
+    flex-direction: column;
+}
+.Hero__image{
+    width: 100%;
+}
+.Hero__container--image{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.Hero__text--gradient{
+    font-size: 3.75rem;
+    display: block;
+    background: linear-gradient(135deg, #D93D59 0%, #F2AE2E 50%, #F2921D 100%);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
+.User__Coins-list{
+    list-style: none;
+    display: flex;
+    
+    
+}
+.User__Coins-item{
+    margin-right: -10;
+}
+@media (min-width: 768px) {
+    .Hero__container{
+        flex-direction: row;
+    }
+    .Hero__container--titles{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+     .Hero__container{
+    }
+    .Hero__container--titles{
+        align-items: center;
+        justify-content: center;
+    }
+}

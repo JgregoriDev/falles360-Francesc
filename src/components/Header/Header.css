@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+.header__nav {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+}
+.header__nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+.header__nav-item {
+}
+.header__nav-link {
+  font-size: var(--third-Color);
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}

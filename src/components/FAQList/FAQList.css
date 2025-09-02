@@ -1,0 +1,28 @@
+.faq {
+}
+.faq__header {
+    display: flex;
+}
+.faq__arrow {
+    margin: auto;
+}
+.faq__arrow:hover {
+    transform: rotate(270deg);
+}
+.faq__item {
+    
+}
+.faq__question {
+    width: 85%;
+}
+.faq__answer {
+}
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+    .faq__arrow:hover {
+        transform: rotate(-90deg);
+    }
+    
+}

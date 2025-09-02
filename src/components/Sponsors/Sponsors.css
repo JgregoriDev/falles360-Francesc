@@ -1,0 +1,11 @@
+.container__sponsors {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.container__sponsors-image {
+    width: 100%;
+    height: auto;
+}
+.container__-title {
+}

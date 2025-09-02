@@ -1,0 +1,26 @@
+j.container__icon {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.logo__header {
+  color: var(--thirdColor);
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .container__icon {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container__icon {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

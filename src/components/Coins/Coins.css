@@ -1,0 +1,29 @@
+.Coins__list {
+  display: flex;
+  list-style: none;
+  align-items: end;
+  flex-direction: row;
+  margin: 2rem;
+}
+.Coins__image {
+  border-radius: 50%;
+  width: 75px;
+  height: auto;
+  margin-right: -15px;
+}
+
+.Coins__small {
+  padding-left: 1.25rem;
+  align-self: end;
+  font-size: 1.5rem;
+  color: green;
+}
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .Coins__image:hover {
+    filter: drop-shadow(2px 3px gray);
+    transform: translateY(-5px);
+  }
+}

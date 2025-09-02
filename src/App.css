@@ -1,0 +1,32 @@
+:root {
+  --primaryColor: #d93d59;
+  --secondColor: #f2ae2e;
+  --thirdColor: #f2921d;
+  --fourtColor: #f25835;
+  --fifthColor: #f2f2f2;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container__left-site{
+    display: none;
+}
+.container-center-site {
+}
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+    .container{
+        /* TODO: corregir el important ja que no aplica de manera correcta el flex direcio */
+        flex-direction: row !important;
+    }
+    .container__left-site{
+        display: inline-block;
+        width: 12.5%;
+    }
+    .container-center-site {
+        width: 75%;
+    }
+}
