@@ -1,0 +1,20 @@
+#icon {
+  fill: blue;
+}
+.container__beneficios {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__beneficios > div {
+  width: 100%; /* En móvil, ocupa todo el ancho */
+}
+
+@media screen and (min-width: 600px) {
+  .container__beneficios {
+    flex-direction: row;
+  }
+  .container__beneficios > div {
+    width: 33%; /* En desktop, cada div ocupa un tercio */
+  }
+}

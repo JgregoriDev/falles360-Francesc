@@ -5,7 +5,7 @@ export const FAQList = () => {
     return "No hay"
   }  
   return (    
-  <div className="faq">
+  <section className="faq">
   {FAQs.map((item, index) => (
     <div key={index} className="faq__item" >
       <div className="faq__header">
@@ -24,6 +24,6 @@ export const FAQList = () => {
       <p className="faq__answer">{item.answer}</p>
     </div>
   ))}
-</div>
+</section>
   )
 };

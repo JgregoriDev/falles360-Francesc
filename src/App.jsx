@@ -1,6 +1,15 @@
 import "@/App.css";
 // import Footer from './components/Footer/Footer';
-import { Header, Footer, Hero, Coins, FAQList, Sponsors } from "@/components";
+import {
+  Header,
+  Footer,
+  TablaPrecios,
+  Hero,
+  Coins,
+  FAQList,
+  Beneficios,
+  Sponsors,
+} from "@/components";
 
 function App() {
   return (
@@ -13,6 +22,8 @@ function App() {
         <div className="container__left-site">&nbsp;</div>
         <div className="container-center-site">
           <Coins />
+          <Beneficios />
+          <TablaPrecios />
           <Sponsors />
           <FAQList />
         </div>

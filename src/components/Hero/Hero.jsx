@@ -3,7 +3,7 @@ import screenShotApp from "../../assets/app.png";
 import "./Hero.css";
 export const Hero = () => {
   return (
-    <div className="">
+    <section className="">
       <div className="Hero__container">
         <div className="Hero__container--titles">
           <h1 className="Hero__text">
@@ -20,6 +20,6 @@ export const Hero = () => {
         </div>
       </div>
       
-    </div>
+    </section>
   );
 };
