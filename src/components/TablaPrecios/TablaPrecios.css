@@ -1,0 +1,38 @@
+.container__pricing {
+  display: flex;
+  flex-direction: column;
+  background: var(--fifthColor);
+  margin-top: 1rem;
+  margin-botton: 1rem;
+}
+.container__princing--free {
+  width: 50%;
+}
+.container__princing--premium {
+  width: 50%;
+}
+.container__princing-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--fifthColor);
+}
+.conteiner__pricing-element {
+  color: var(--primaryColor);
+  transition: background 0.3s, color 0.3s;
+}
+
+.conteiner__pricing-element:hover {
+  background: var(--fifthColorHover); /* Cambia color al hacer hover */
+  color: var(--primaryColorHover);
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .container__pricing {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+}
