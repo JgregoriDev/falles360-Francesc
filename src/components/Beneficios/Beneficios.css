@@ -1,10 +1,32 @@
-#icon {
-  fill: blue;
+.benefits__icon {
+  fill: var(--thirdColor);
+    transition: fill 0.3s ease; 
+}
+.benefits__icon:hover{
+  
+  fill: var(--thirdColorHover);
+}
+.benefits__icon .container__title:hover{
+  fill: var(--thirdColorHover);
+
+}
+.container__beneficios > div {
+  border: 2px solid transparent; /* Borde inicial transparente */
+  transition: all 0.3s ease-in-out;
+}
+
+.container__beneficios > div:hover {
+  border-color: var(--fourtColorHover); /* El borde se vuelve visible en el hover */
+  box-shadow: 0 0 10px var(--fourtColorHover); /* Sombra para el efecto de "iluminado" */
 }
 .container__title{
   font-size: xx-large;
   margin-top: 2.25em;
   margin-bottom: 1.25em;
+}
+.benefits__title{
+  font-size: clamp(1.65rem, 5vw + 1rem, 2rem);
+
 }
 .container__beneficios {
   display: grid;
@@ -38,4 +60,15 @@
       min-height: 425px;
 
   }
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+.container__beneficios > div:hover .benefits__icon {
+  animation: blink 1s; /* Aplica la animación */
 }

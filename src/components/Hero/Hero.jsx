@@ -2,7 +2,7 @@ import screenShotApp from "../../assets/app.webp";
 import "./Hero.css";
 export const Hero = () => {
   return (
-    <section className="">
+    <section className="section__hero">
       <div className="Hero__container">
         <div className="Hero__container--titles">
           <h1 className="Hero__text">

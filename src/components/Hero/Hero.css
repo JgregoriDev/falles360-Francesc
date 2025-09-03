@@ -1,3 +1,6 @@
+.section__hero{
+    margin-top: 2.25em;
+}
 .Hero__container{
     display: flex;
     flex-direction: column;
@@ -52,3 +55,4 @@
         justify-content: center;
     }
 }
+
