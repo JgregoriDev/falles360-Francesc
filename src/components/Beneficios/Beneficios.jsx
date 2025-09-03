@@ -2,9 +2,12 @@ import "./Beneficios.css";
 export const Beneficios = () => {
   return (
     <section className="section">
-      <h3>Beneficios</h3>
+      <h3 className="container__title">Beneficios</h3>
       <div className="container__beneficios">
         <div className="">
+          <div className="">
+              </div>
+
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height={50}
@@ -21,6 +24,9 @@ export const Beneficios = () => {
           </p>
         </div>
         <div className="">
+          <div className="">
+              </div>
+
           <svg
             height={50}
             width={50}
@@ -35,6 +41,9 @@ export const Beneficios = () => {
           <p className="">Ubica fallas, eventos y actividades en tiempo real</p>
         </div>
         <div className="">
+          <div className="">
+              </div>
+
           <svg
             height={50}
             width={50}
@@ -52,6 +61,9 @@ export const Beneficios = () => {
           </p>
         </div>
         <div className="">
+          <div className="">
+              </div>
+
           <svg
             height={50}
             width={50}
@@ -66,6 +78,9 @@ export const Beneficios = () => {
           <p className=""></p>
         </div>
         <div className="">
+          <div className="">
+              </div>
+
           <svg
             height={50}
             width={50}
@@ -83,6 +98,9 @@ export const Beneficios = () => {
           </p>
         </div>
         <div className="">
+          <div className="">
+              </div>
+
           <svg
             height={50}
             width={50}
@@ -100,6 +118,9 @@ export const Beneficios = () => {
           </p>
         </div>
         <div className="">
+          <div className="">
+              </div>
+
           <svg
             height={50}
             width={50}
@@ -117,6 +138,9 @@ export const Beneficios = () => {
           </p>
         </div>
         <div className="">
+          <div className="">
+              </div>
+
           <svg
             height={50}
             width={50}
@@ -134,6 +158,9 @@ export const Beneficios = () => {
           </p>
         </div>
         <div className="">
+          <div className="">
+              </div>
+
           <svg
             height={50}
             width={50}
