@@ -10,6 +10,11 @@
   --fourtColorHover: rgba(242, 88, 53,.8);
   --fifthColorHover: rgba(242, 242, 242,.8);
 }
+.section{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
 .container {
   display: flex;
   flex-direction: column;

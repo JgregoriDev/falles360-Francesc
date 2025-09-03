@@ -5,7 +5,7 @@ export const FAQList = () => {
     return "No hay";
   }
   return (
-    <section className="faqs">
+    <section className="section faqs">
       <h2>Preguntas y respuestas sobre nuestros servicios</h2>
       <div className="accordion">
         {FAQs.map((item, index) => (

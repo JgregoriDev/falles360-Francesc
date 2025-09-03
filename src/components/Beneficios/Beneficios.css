@@ -1,6 +1,7 @@
 #icon {
   fill: blue;
 }
+
 .container__beneficios {
   display: flex;
   flex-direction: column;
