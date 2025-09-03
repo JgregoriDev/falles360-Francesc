@@ -1,16 +1,21 @@
 :root {
-  --primaryColor: #d93d59;
-  --secondColor: #f2ae2e;
-  --thirdColor: #f2921d;
-  --fourtColor: #f25835;
-  --fifthColor: #f2f2f2;
+  --primaryColor: rgba(217, 61, 89, 1);
+  --secondColor: rgba(242, 174, 46, 1);
+  --thirdColor: rgba(242, 146, 29, 1);
+  --fourtColor: rgba(242, 88, 53, 1);
+  --fifthColor: rgba(242, 242, 242, 1);
+  --primaryColorHover: rgba(217, 61, 89,.8);
+  --secondColorHover: rgba(242, 174, 46,.8);
+  --thirdColorHover: rgba(242, 146, 29,.8);
+  --fourtColorHover: rgba(242, 88, 53,.8);
+  --fifthColorHover: rgba(242, 242, 242,.8);
 }
-.container{
-    display: flex;
-    flex-direction: column;
+.container {
+  display: flex;
+  flex-direction: column;
 }
-.container__left-site{
-    display: none;
+.container__left-site {
+  display: none;
 }
 .container-center-site {
 }
@@ -18,15 +23,15 @@
 }
 
 @media (min-width: 992px) {
-    .container{
-        /* TODO: corregir el important ja que no aplica de manera correcta el flex direcio */
-        flex-direction: row !important;
-    }
-    .container__left-site{
-        display: inline-block;
-        width: 12.5%;
-    }
-    .container-center-site {
-        width: 75%;
-    }
+  .container {
+    /* TODO: corregir el important ja que no aplica de manera correcta el flex direcio */
+    flex-direction: row !important;
+  }
+  .container__left-site {
+    display: inline-block;
+    width: 12.5%;
+  }
+  .container-center-site {
+    width: 75%;
+  }
 }
