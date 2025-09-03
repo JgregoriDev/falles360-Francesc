@@ -1,6 +1,7 @@
 .header {
   background: var(--fifthColor);
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .header__nav {
@@ -8,12 +9,13 @@
   width: 100%;
   height: 100%;
   font-size: 2rem;
+  display: flex;
 }
 .header__nav-list {
   list-style: none;
   display: flex;
   gap: 1rem;
-  flex-direction: row;
+  flex-direction: column;
 }
 .header__nav-item {
 }
@@ -23,6 +25,12 @@
 }
 
 @media (min-width: 768px) {
+  .header{
+    flex-direction: row;
+  }
+  .header__nav-list{
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 992px) {

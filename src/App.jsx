@@ -1,16 +1,7 @@
 import "@/App.css";
-// import Footer from './components/Footer/Footer';
-import {
-  Header,
-  Footer,
-  TablaPrecios,
-  Hero,
-  Coins,
-  FAQList,
-  Beneficios,
-  Sponsors,
-} from "@/components";
-
+import { Header, Footer, Hero } from "@/components";
+import { Home } from "@/pages/Home/Home.jsx";
+import { PoliticaPrivadad } from "@/pages/PoliticaPrivadad/PoliticaPrivadad";
 function App() {
   return (
     <>
@@ -21,11 +12,8 @@ function App() {
       <div className="container">
         <div className="container__left-site">&nbsp;</div>
         <div className="container-center-site">
-          <Coins />
-          <Beneficios />
-          <TablaPrecios />
-          <Sponsors />
-          <FAQList />
+          <Home />
+          <PoliticaPrivadad />
         </div>
       </div>
       {/* 100% width */}
