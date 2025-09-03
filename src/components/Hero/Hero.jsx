@@ -1,5 +1,4 @@
-// import screenShotApp from "../../assets/app.png";
-import screenShotApp from "../../assets/app.png";
+import screenShotApp from "../../assets/app.webp";
 import "./Hero.css";
 export const Hero = () => {
   return (
@@ -16,7 +15,7 @@ export const Hero = () => {
           </h4>
         </div>
         <div className="Hero__container--image">
-          <img className="Hero__image" src={`${screenShotApp}`} height={`475px`} />
+          <img className="Hero__image" src={`${screenShotApp}`} height={`475px`} alt="Captura de pantalla de falla 360" loading="lazy" />
         </div>
       </div>
       

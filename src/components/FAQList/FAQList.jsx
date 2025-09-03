@@ -7,11 +7,11 @@ export const FAQList = () => {
   return (
     <section className="faqs">
       <h2>Preguntas y respuestas sobre nuestros servicios</h2>
-      <div class="accordion">
+      <div className="accordion">
         {FAQs.map((item, index) => (
-          <div class="accordion__item" key={index}>
+          <div className="accordion__item" key={index}>
             <input type="radio" name="accordion" id={`radio${index}`} />
-            <label for={`radio${index}`} class="accordion__question">
+            <label htmlFor={`radio${index}`} className="accordion__question">
               <h3 className="acordion__title">
                 {item.question}
                 <svg
@@ -25,7 +25,7 @@ export const FAQList = () => {
                 </svg>
               </h3>
             </label>
-            <p class="accordion__contenido">{item.answer}</p>
+            <p className="accordion__answer">{item.answer}</p>
           </div>
         ))}
       </div>
