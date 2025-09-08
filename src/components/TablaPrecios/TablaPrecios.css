@@ -20,6 +20,9 @@
 }
 .conteiner__pricing-element {
   color: var(--primaryColor);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
   transition: background 0.3s, color 0.3s;
 }
 
@@ -27,6 +30,48 @@
   background: var(--fifthColorHover); /* Cambia color al hacer hover */
   color: var(--primaryColorHover);
   cursor: pointer;
+}
+
+.container__princing-title{
+
+  font-size: 2rem;
+}
+.container__princing-subtitle{
+  font-size: large;
+}
+.conteiner__pricing-element--outline {
+  background-color: none;
+  text-align: center;
+  margin-right: 1.5625rem;
+  margin-left: 1.5625rem;
+  border: .25rem solid var(--primaryColor);
+  color:  var(--primaryColor);
+  font-weight: bold;
+  border-radius: 1.5625rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  animation: 0.5s linear 1s infinite alternate slide-in;
+}
+.conteiner__pricing-element--outline:hover{
+  background-color: var(--primaryColor);
+  color: white;
+}
+.conteiner__pricing-element--inline {
+  background-color: var(--primaryColor);
+  text-transform: uppercase;
+  text-align: center;
+  margin-right: 1.5625rem;
+  font-weight: bold;
+  margin-left: 1.5625rem;
+  color: white;
+  border: .25rem solid var(--primaryColor);
+  border-radius: 1.5625rem;
+  padding: 1rem;
+  animation: 0.5s linear 1s infinite alternate slide-in;
+}
+.conteiner__pricing-element--inline:hover{
+  background-color: var(--primaryColorHover);
+
 }
 @media (min-width: 768px) {
   .container__pricing {
