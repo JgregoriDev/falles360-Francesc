@@ -1,14 +1,50 @@
 [
   {
-    "question": "Pregunta 1",
-    "answer": "Respuesta 1"
+    "question": "¿Cómo me entero de los eventos que están ocurriendo ahora mismo?",
+    "answer": "Nuestra app muestra una sección de eventos en tiempo real, actualizada constantemente para que no te pierdas nada."
   },
   {
-    "question": "Pregunta 2",
-    "answer": "Respuesta 2"
+    "question": "¿Recibiré notificaciones cuando empiece un evento importante?",
+    "answer": "Puedes activar las notificaciones automáticas para recibir avisos cuando empiece un acto, haya cambios de horario o surjan promociones especiales."
   },
   {
-    "question": "Pregunta 3",
-    "answer": "Respuesta 3"
+    "question": "¿Dónde puedo ver un mapa con las fallas cercanas o los puntos clave del evento?",
+    "answer": "En la app dispones de un mapa interactivo que te muestra fallas, escenarios, zonas de comida, aseos, puntos de información y mucho más."
+  },
+  {
+    "question": "¿Hay juegos o dinámicas para ganar premios?",
+    "answer": "Sí, hemos incorporado dinámicas gamificadas para que puedas participar, ganar puntos y entrar en sorteos exclusivos para usuarios registrados."
+  },
+  {
+    "question": "¿Cómo participo en los sorteos?",
+    "answer": "Solo por registrarte y participar en eventos ya estás dentro. Las inscripciones son automáticas, ¡tú solo disfruta!"
+  },
+  {
+    "question": "¿Puedo pagar directamente desde el móvil?",
+    "answer": "Sí. Puedes hacer pagos móviles rápidos y seguros desde la app, sin efectivo ni tarjetas."
+  },
+  {
+    "question": "¿Puedo evitar las colas en la barra?",
+    "answer": "Sí, olvídate de los tokens. Pide desde el móvil y evita colas en la barra con nuestro sistema de pedidos anticipados."
+  },
+  {
+    "question": "¿Cómo accedo a zonas restringidas del evento o a actividades privadas?",
+    "answer": "Puedes usar una pulsera o llavero NFC, sincronizado con tu perfil, para acceder sin necesidad de mostrar entradas o tickets físicos."
+  },
+  {
+    "question": "¿Cómo me inscribo a eventos concretos?",
+    "answer": "No necesitas hacerlo manualmente. Una vez registrado/a, la app hace inscripciones automáticas a eventos según tus intereses."
+  },
+  {
+    "question": "¿Hay contenido exclusivo para falleros?",
+    "answer": "Sí, los miembros registrados pueden acceder a contenidos VIP como vídeos, sorteos, entrevistas y galerías de fotos privadas."
+  },
+  {
+    "question": "¿Puedo compartir lo que vivo en las fallas por redes sociales desde la app?",
+    "answer": "Sí, tienes acceso directo a tus redes sociales para publicar fotos, vídeos o stories desde el evento."
+  },
+  {
+    "question": "¿Puedo conectar con la gente de mi falla?",
+    "answer": "¡Por supuesto! Cada falla tiene un grupo digital privado donde puedes chatear, compartir info, coordinar actividades o simplemente comentar la fiesta."
   }
 ]
