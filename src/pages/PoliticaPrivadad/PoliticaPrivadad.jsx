@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 export const PoliticaPrivadad = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
   return (
     <div>
       <h3>Política de Privacidad</h3>
@@ -85,6 +90,7 @@ export const PoliticaPrivadad = () => {
         básicos de transparencia, informando de manera clara y accesible sobre
         la gestión de los datos personales recogidos a través de tu web o app .
       </p>
+      <p>Iconos obtenidos de <a href="https://fontawesome.com/" target="_blanck" title="Fonts awesome">Fonts awesome</a></p>
     </div>
   );
 };
