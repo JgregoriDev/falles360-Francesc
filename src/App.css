@@ -9,6 +9,7 @@
   --thirdColorHover: rgba(242, 146, 29,.5);
   --fourtColorHover: rgba(242, 88, 53,.5);
   --fifthColorHover: rgba(242, 242, 242,.5);
+  scroll-behavior: smooth;
 }
 .section{
   margin-top: 2rem;
