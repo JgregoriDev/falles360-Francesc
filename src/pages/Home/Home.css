@@ -1,0 +1,25 @@
+.btn--scroll {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  fill: var(--primaryColor);
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  bottom: 0.625rem;
+  right: 0.625rem;
+}
+.btn--scroll:hover{
+    fill: var(--primaryColorHover);
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}

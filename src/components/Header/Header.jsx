@@ -18,13 +18,13 @@ export const Header = () => {
                         <a href="/falles360-Francesc#benefinicios" className="header__nav-link">Beneficios</a>
                     </li>
                     <li className="header__nav-item">
-                        <a href="/falles360-Francesc#tablasPrecios" className="header__nav-link">Tabla</a>
+                        <a href="/falles360-Francesc#tablasPrecios" className="header__nav-link">Tabla de precios</a>
                     </li>
                     <li className="header__nav-item">
                         <a href="/falles360-Francesc#patrocinadors" className="header__nav-link">Patrocinadors</a>
                     </li>
                     <li className="header__nav-item">
-                        <Link href="/falles360-Francesc#preguntas" className="header__nav-link">Preguntas y respuestas</Link>
+                        <a href="/falles360-Francesc#preguntas" className="header__nav-link">Preguntas y respuestas</a>
                     </li>
                     <li className="header__nav-item">
                         <Link href="/falles360-Francesc#" className="header__nav-link">Blog</Link>
