@@ -25,10 +25,27 @@
 }
 .container-center-site {
 }
-@media (min-width: 768px) {
+.button--outline {
+  background-color: none;
+  text-align: center;
+  margin-right: 1.5625rem;
+  margin-left: 1.5625rem;
+  border: 0.25rem solid var(--primaryColor);
+  color: var(--primaryColor);
+  font-weight: bold;
+  border-radius: 1.5625rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  animation: 0.5s linear 1s infinite alternate slide-in;
+}
+.button--outline:hover {
+  background-color: var(--primaryColor);
+  color: white;
+}
+@media screen and (min-width: 768px) {
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .container {
     /* TODO: corregir el important ja que no aplica de manera correcta el flex direcio */
     flex-direction: row !important;
