@@ -1,0 +1,40 @@
+.container__rail{
+    display: none;
+}
+.foto {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.container__overlay {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.parraf {
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.container__overlay:hover .parraf {
+  opacity: 1;
+}
+@media screen and (min-width: 792px) {
+    .container__rail {
+        display: block;
+    }
+}
