@@ -91,7 +91,9 @@ export const PoliticaPrivadad = () => {
         la gestión de los datos personales recogidos a través de tu web o app .
       </p>
       <p>Iconos obtenidos de <a href="https://fontawesome.com/" target="_blanck" title="Fonts awesome">Fonts awesome</a></p>
-      <p>Imagenes obtenidos de <a href="https://gemini.google.com/" target="_blanck" title="Gemini">Gemini/</a> y la de los usuarios  <a href="https://thispersonnotexist.org/" title="thispersonnotexist">thispersonnotexist</a></p>
+      <p>Imagenes obtenidos de <a target="_blank" href="https://pixabay.com/" title="https://pixabay.com/">Pixabay</a> 
+      <a href="https://gemini.google.com/" target="_blank" title="Gemini">Gemini/</a> y la de los usuarios  
+      <a target="_blank" href="https://thispersonnotexist.org/" title="thispersonnotexist">thispersonnotexist</a></p>
     </div>
   );
 };
