@@ -2,6 +2,8 @@
   background: var(--fifthColor);
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
 }
 .header__nav {
