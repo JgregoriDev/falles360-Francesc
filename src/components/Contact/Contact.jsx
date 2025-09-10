@@ -31,6 +31,7 @@ export const Contact = () => {
     });
   };
   const validateEmail = (email) => {
+    if (!email) return false;
     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return regex.test(email);
   };
@@ -70,10 +71,9 @@ export const Contact = () => {
       setErrors(validationErrors);
     } else {
       // TODO: Peticion post
-      
+
       setErrors({});
       setSuccesfull(!succesfull);
-      
     }
   };
   return (
@@ -133,7 +133,11 @@ export const Contact = () => {
         <button className="button--outline" type="submit">
           Envíanos tu consulta
         </button>
-       {succesfull? <small className="form__successfull">El mensaje ha sido enviado correctamente</small>:""}
+        {succesfull && (
+          <small className="form__successfull">
+            El mensaje ha sido enviado correctamente
+          </small>
+        )}
       </form>
     </section>
   );

@@ -92,8 +92,8 @@ export const PoliticaPrivadad = () => {
       </p>
       <p>Iconos obtenidos de <a href="https://fontawesome.com/" target="_blanck" title="Fonts awesome">Fonts awesome</a></p>
       <p>Imagenes obtenidos de <a target="_blank" href="https://pixabay.com/" title="https://pixabay.com/">Pixabay</a> 
-      <a href="https://gemini.google.com/" target="_blank" title="Gemini">Gemini/</a> y la de los usuarios  
-      <a target="_blank" href="https://thispersonnotexist.org/" title="thispersonnotexist">thispersonnotexist</a></p>
+      <a href="https://gemini.google.com/" target="_blank" title="Gemini">Gemini/</a> y la de los usuarios 
+      <a target="_blank" href="https://thispersonnotexist.org/" title="thispersonnotexist"> thispersonnotexist</a></p>
     </div>
   );
 };

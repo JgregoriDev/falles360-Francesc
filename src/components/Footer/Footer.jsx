@@ -10,9 +10,59 @@ export const Footer = () => {
           <Logo />
         </div>
         <div className="footer__links">
-          <Link to="/falles360-Francesc/politica-privacidad" title="Política de protección de dado">
-            Protecció de dades.
-          </Link>
+            <nav className="footer__nav">
+              <ul className="footer__nav-list">
+                <li className="footer__nav-item">
+                  <a
+                    href="/falles360-Francesc#benefinicios"
+                    className="footer__nav-link"
+                  >
+                    Beneficios
+                  </a>
+                </li>
+                <li className="footer__nav-item">
+                  <a
+                    href="/falles360-Francesc#tablasPrecios"
+                    className="footer__nav-link"
+                  >
+                    Precios
+                  </a>
+                </li>
+                <li className="footer__nav-item">
+                  <a
+                    href="/falles360-Francesc#patrocinadors"
+                    className="footer__nav-link"
+                  >
+                    Patrocinadors
+                  </a>
+                </li>
+                <li className="footer__nav-item">
+                  <a
+                    href="/falles360-Francesc#preguntas"
+                    className="footer__nav-link"
+                  >
+                    FAQS
+                  </a>
+                </li>
+                <li className="footer__nav-item">
+                  <a
+                    href="/falles360-Francesc#contacto"
+                    className="footer__nav-link"
+                  >
+                    Contacto
+                  </a>
+                </li>
+                <li className="footeer__nav-item">
+                  <Link
+                    to="/falles360-Francesc/politica-privacidad"
+                    className="footer__nav-link"
+                    title="Política de protección de dado"
+                  >
+                    Política de privacidad
+                  </Link>
+                </li>
+              </ul>
+            </nav>
         </div>
       </div>
       <div className="footer__social-network">
@@ -38,11 +88,7 @@ export const Footer = () => {
             <path d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z" />
           </svg>
         </a>
-        <a
-          href="https://www.instagram.com"
-          target="_blank"
-          title="Instagram"
-        >
+        <a href="https://www.instagram.com" target="_blank" title="Instagram">
           <svg
             width={50}
             height={50}
