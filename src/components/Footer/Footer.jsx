@@ -10,7 +10,7 @@ export const Footer = () => {
           <Logo />
         </div>
         <div className="footer__links">
-          <Link to="/falles360-Francesc/politica-privacidad">
+          <Link to="/falles360-Francesc/politica-privacidad" title="Política de protección de dado">
             Protecció de dades.
           </Link>
         </div>
