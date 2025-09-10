@@ -1,0 +1,26 @@
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
+    
+
+}
+.form__errors{
+    color: red;
+}
+.form__field{
+    width: 90%;
+}
+.form__textarea{
+    height: 175px;
+    resize: vertical;
+}
+.form__successfull{
+    color: green;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
