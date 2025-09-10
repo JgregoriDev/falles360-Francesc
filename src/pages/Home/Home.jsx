@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import {
   TablaPrecios,
   Coins,
+  Rail,
   FAQList,
+  Contact,
   Beneficios,
   Sponsors,
 } from "@/components";
@@ -31,9 +33,11 @@ export const Home = () => {
     <div>
       <Coins />
       <Beneficios />
+      <Rail />
       <TablaPrecios />
       <Sponsors />
       <FAQList />
+      <Contact />
       <button
         className={`btn--scroll `}
         style={{ display: isVisible ? "block" : "none" }}
