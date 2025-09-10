@@ -27,10 +27,10 @@ export const Header = () => {
                         <a href="/falles360-Francesc#preguntas" className="header__nav-link">Preguntas y respuestas</a>
                     </li>
                     <li className="header__nav-item">
-                        <Link href="/falles360-Francesc#" className="header__nav-link">Blog</Link>
+                        <a href="/falles360-Francesc#contacto" className="header__nav-link">Contacto</a>
                     </li>
                     <li className="header__nav-item">
-                        <Link href="/falles360-Francesc#" className="header__nav-link">Contact</Link>
+                        <Link href="/falles360-Francesc#" className="header__nav-link">Blog</Link>
                     </li>
                 </ul>
             </nav>

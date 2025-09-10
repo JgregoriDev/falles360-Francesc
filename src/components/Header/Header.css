@@ -24,14 +24,14 @@
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .header{
-    flex-direction: row;
+    flex-direction: column;
   }
   .header__nav-list{
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
 }
