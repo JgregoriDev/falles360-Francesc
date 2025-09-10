@@ -95,7 +95,6 @@ export const Contact = () => {
         <label htmlFor="email">Correo electrónico:</label>
         <input
           className="form__field"
-          form__textarea
           type="text"
           name="email"
           id="email"
