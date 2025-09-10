@@ -37,11 +37,13 @@ export const Rail = () => {
       <div className="">
         <h3>3. Luces de noche típicas de Fallas</h3>
         <div className="container__overlay">
-          <img className="foto" src={Foto3} loading="lazy" alt="" />
+          <img className="foto" src={Foto3} loading="lazy" alt="Luces de noche típicas de Fallas" />
           <p className="parraf">
-            Este año, deja que el fuego de la tradición ilumine tu camino,
-            mientras tú te sumerges en la esencia de lo que realmente importa:
-            los momentos que compartes y el tiempo que atesoras.
+            En las mágicas noches de Fallas, las luces brillan y evocan
+            recuerdos. Con nuestra app, nunca más llegarás tarde a los eventos,
+            disfruta de tickets digitales y participa activamente en la
+            celebración. Vive la tradición digitalizada y siente la esencia de
+            nuestras raíces en cada notificación.
           </p>
         </div>
       </div>
