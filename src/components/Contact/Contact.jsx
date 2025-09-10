@@ -84,7 +84,6 @@ export const Contact = () => {
         <label htmlFor="name">Nombre:</label>
         <input
           className="form__field"
-          t
           form__textareaype="text"
           name="name"
           id="name"
@@ -135,7 +134,7 @@ export const Contact = () => {
         <button className="button--outline" type="submit">
           Envíanos tu consulta
         </button>
-        <small className="form__successfull">{succesfull? "El mensaje ha sido enviado correctamente":""}</small>
+       {succesfull? <small className="form__successfull">El mensaje ha sido enviado correctamente</small>:""}
       </form>
     </section>
   );
