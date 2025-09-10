@@ -1,0 +1,8 @@
+# Redirigir URLs con barra final a la versión sin barra
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [R=301,L]
+
+# Asegurarse de que las URLs sin barra final funcionen
+RewriteRule ^([^/]+)/?$ $1/index.html [L]
