@@ -69,7 +69,7 @@ export const Contact = () => {
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
     } else {
-      // Peticion post
+      // TODO: Peticion post
       
       setErrors({});
       setSuccesfull(!succesfull);
