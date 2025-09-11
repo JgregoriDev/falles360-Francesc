@@ -105,7 +105,7 @@ export const Contact = () => {
 
         <label htmlFor="subject">Asunto:</label>
         <textarea
-          className="form__field form__textarea"
+          className="form__textarea"
           name="subject"
           id="subject"
           value={formData.subject}
