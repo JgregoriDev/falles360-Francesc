@@ -4,7 +4,7 @@ export const Sponsors = () => {
   return (
     <section id="patrocinadors" className="section container__sponsors">
         
-      <h3 className="container__sponsors-title">Patrocinadors</h3>
+      <h2 className="container__sponsors-title">Patrocinadors</h2>
       <img className="container__sponsors-image" src={`${SponsorsFallas}`} alt="Sponsors falles" loading="lazy" />
     </section>
   );

@@ -70,6 +70,7 @@
 }
 .conteiner__pricing-element--inline:hover {
   background-color: var(--primaryColorHover);
+  color: rgba(17, 17, 17, 0.8);
 }
 @media screen and (min-width: 768px) {
   .container__pricing {

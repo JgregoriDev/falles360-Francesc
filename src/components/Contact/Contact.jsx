@@ -78,7 +78,7 @@ export const Contact = () => {
   };
   return (
     <section className="contacto" id="contacto">
-      <h3>Contacto</h3>
+      <h2>Contacto</h2>
       <p>Tienes dudas o necesitas más información?</p>
       <form className="contact__form" onSubmit={handleSubmit}>
         <label htmlFor="name">Nombre:</label>
@@ -105,7 +105,7 @@ export const Contact = () => {
 
         <label htmlFor="subject">Asunto:</label>
         <textarea
-          className="form__textarea"
+          className="form__field form__textarea"
           name="subject"
           id="subject"
           value={formData.subject}
@@ -123,10 +123,10 @@ export const Contact = () => {
             checked={formData.rgpd}
             onChange={handleChange}
           />
-          He leído{" "}
+          <label htmlFor="rgpd">He leído{" "}
           <a target="_blank" href="/falles360-Francesc/politica-privacidad">
             la política de privacidad
-          </a>
+          </a></label>
         </p>
         {errors.rgpd && <small className="form__errors">{errors.rgpd}</small>}
 

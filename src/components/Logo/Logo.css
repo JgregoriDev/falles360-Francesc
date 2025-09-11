@@ -7,6 +7,9 @@ j.container__icon {
 }
 .logo__header {
   color: var(--thirdColor);
+  font-size: 1.375rem;
+  font-weight: bold;
+
   text-decoration: none;
 }
 

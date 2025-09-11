@@ -2,10 +2,10 @@ import "./TablaPrecios.css";
 export const TablaPrecios = () => {
   return (
     <section id="tablasPrecios" className="">
-      <h3 className="container__princing-title">Tabla de precios</h3>
+      <h2 className="container__princing-title">Tabla de precios</h2>
       <div className="container__pricing">
         <div className="container__princing--free">
-          <h5 className="container__princing-subtitle">Usuario gratuito</h5>
+          <h3 className="container__princing-subtitle">Usuario gratuito</h3>
           <ul className="container__princing-list">
             <li id="li1" className="conteiner__pricing-element">Eventos en tiempo real</li>
             <li id="li2" className="conteiner__pricing-element">Recibir notificaciones automáticas</li>
@@ -24,7 +24,7 @@ export const TablaPrecios = () => {
           </ul>
         </div>
         <div className="container__princing--premium">
-          <h5 className="container__princing-subtitle">Usuario de pago</h5>
+          <h3 className="container__princing-subtitle">Usuario de pago</h3>
           <ul className="container__princing-list">
             <li id="li5" className="conteiner__pricing-element">Eventos en tiempo real</li>
             <li id="li6" className="conteiner__pricing-element">Recibir notificaciones automáticas</li>

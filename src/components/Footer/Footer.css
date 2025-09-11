@@ -14,9 +14,11 @@
   align-items: center;
 }
 .footer__nav-link {
-  font-size: larger;
+  font-size: 1.75rem;
+  margin-top: 2rem;
   text-decoration: none;
 }
+
 .icons {
   fill: var(--fourtColor);
 }
@@ -26,6 +28,11 @@
 @media screen and (min-width: 768px) {
 }
 @media screen and (min-width: 992px) {
+  .footer__nav-link {
+  font-size: 1.25rem;
+  text-decoration: none;
+  margin-top: 0;
+}
 
   .container__footer {
     margin-left: 12.5%;

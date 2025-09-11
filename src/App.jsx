@@ -21,7 +21,7 @@ function App() {
               path="/falles360-Francesc/politica-privacidad"
               component={PoliticaPrivadad}
             />
-            <Route>404: Página no encontrada!</Route>
+            <Route style={{ gridColumn: "1 / -1" }}>404: Página no encontrada!</Route>
           </Switch>
         </div>
       </div>

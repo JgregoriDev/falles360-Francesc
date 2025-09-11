@@ -9,10 +9,10 @@ export const Hero = () => {
             <span className="Hero__text--gradient">Fallas 360:</span> La
             experiencia fallera completa en tu mano
           </h1>
-          <h4>
+          <h2>
             Eventos, tickets, pagos y comunidad en una sola app. Vive las Fallas
             sin perderte nada
-          </h4>
+          </h2>
         </div>
         <div className="Hero__container--image">
           <img className="Hero__image" src={`${screenShotApp}`} height={`475px`} alt="Captura de pantalla de falla 360" loading="lazy" />

@@ -7,7 +7,7 @@ export const Logo = () => {
         <img src={pathLogo} alt="Logo Falles 360" className="logo__image" />
       </a>
       <a href="/falles360-Francesc" className="logo__header" title="Falles 360">
-        <h3 className="logo__header">Falles 360</h3>
+        <p className="logo__header">Falles 360</p>
       </a>
     </div>
   );
