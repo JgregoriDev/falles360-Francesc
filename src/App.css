@@ -10,6 +10,7 @@
   --fourtColorHover: rgba(242, 88, 53,.5);
   --fifthColorHover: rgba(242, 242, 242,.5);
   scroll-behavior: smooth;
+  --image-height: 475px;
 }
 .section{
   margin-top: 2rem;

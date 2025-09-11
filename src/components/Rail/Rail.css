@@ -27,14 +27,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .container__overlay:hover .parraf {
   opacity: 1;
 }
 @media screen and (min-width: 792px) {
+
     .container__rail {
-        display: block;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .foto {
+        height: var(--image-height);
+        object-fit: cover;
     }
 }
