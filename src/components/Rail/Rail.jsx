@@ -6,7 +6,6 @@ export const Rail = () => {
   return (
     <div className="container__rail">
       <div className="">
-        <h3> 1. Palmeras de fuegos artificiales</h3>
         <div className="container__overlay">
           <img
             className="foto"
@@ -23,7 +22,6 @@ export const Rail = () => {
         </div>
       </div>
       <div className="">
-        <h3>2. Todo arde. Menos tu tiempo</h3>
         <div className="container__overlay">
           <img className="foto" loading="lazy" src={Foto2} alt="Falla circo" />
 
@@ -35,7 +33,6 @@ export const Rail = () => {
         </div>
       </div>
       <div className="">
-        <h3>3. Luces de noche típicas de Fallas</h3>
         <div className="container__overlay">
           <img className="foto" src={Foto3} loading="lazy" alt="Luces de noche típicas de Fallas" />
           <p className="parraf">

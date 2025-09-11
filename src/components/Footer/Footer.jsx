@@ -3,7 +3,6 @@ import "./Footer.css";
 import { Link } from "wouter";
 export const Footer = () => {
   return (
-    // TODO: Acabar Footer
     <footer className="footer">
       <div className="container__footer">
         <div className="footer__logo">
