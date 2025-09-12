@@ -6,9 +6,37 @@
   display: none;
 }
 
+.acordion__title {
+  width: 85%;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.accordion__arrow {
+  font-size: 0.85rem;
+  fill: var(--fifthColor);
+  transition: transform 0.3s ease;
+}
+
+.accordion__item:hover .accordion__arrow {
+  transform: rotate(-90deg);
+}
+.accordion__answer {
+  height: 0;
+  display: none;
+  overflow: hidden;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  transition: ease all 0.5s;
+}
 .accordion__question {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 15px;
+  font-size: small;
   background: var(--primaryColor);
   color: var(--fifthColor);
   font-size: 1.25rem;
@@ -17,57 +45,32 @@
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
-
-.acordion__title{}
-.accordion__question:hover{
-    background-color: var(--primaryColorHover);
-}
-/* .accordion__question ~ hover + accordion__arrow:hover { */
-  /* transform: rotate(-90deg); */
-/* } */
-
-.accordion__arrow {
-  font-size: 1.25rem;
-  fill: var(--fifthColor);
-  transition: transform 0.3s ease;
+.accordion__question:hover {
+  background-color: var(--primaryColorHover);
 }
 
-.accordion__item:hover .accordion__arrow {
+.accordion input:checked + .accordion__question {
+  background-color: var(--thirdColor);
+}
+.accordion input:checked + .accordion__question:hover {
+  background-color: var(--thirdColorHover);
+}
+.accordion input:checked + .accordion__question .accordion__arrow {
   transform: rotate(-90deg);
 }
-.accordion__answer{
-    height:0;
-    display: none;
-    overflow: hidden;
-      padding-left: 7.5%;
-    padding-right: 7.5%;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-    margin: 0;
-    transition: ease all 0.5s;
-}
-.accordion input:checked+ .accordion__question {
-    background-color: var(--thirdColor);
-}
-.accordion input:checked+ .accordion__question:hover {
-    background-color: var(--thirdColorHover);
-}
-.accordion input:checked+ .accordion__question .accordion__arrow{
-    transform: rotate(-90deg);
-
-} 
-.accordion input:checked ~ .accordion__answer{
-    display: block;
-    height: auto;
+.accordion input:checked ~ .accordion__answer {
+  display: block;
+  height: auto;
   margin: 10px 0;
 }
-.accordion__question{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-@media (min-width: 768px) {
+
+@media screen and (min-width: 768px) {
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
+  .accordion__question {
+    font-size: 3rem;
+
+    font-weight: bolder;
+  }
 }
