@@ -4,6 +4,7 @@ export const PoliticaPrivadad = () => {
   useEffect(()=>{
     window.scrollTo(0,0)
   },[])
+  // TODO: Corregir scroll por el cambio de pagina
   return (
     <div>
       <h2>Política de Privacidad</h2>
