@@ -18,6 +18,7 @@
   transition: transform 0.3s ease;
 }
 
+.acordion__title{}
 .accordion__question:hover{
     background-color: var(--primaryColorHover);
 }
@@ -26,7 +27,6 @@
 /* } */
 
 .accordion__arrow {
-  margin-left: 80%;
   font-size: 1.25rem;
   fill: var(--fifthColor);
   transition: transform 0.3s ease;
@@ -55,7 +55,11 @@
   height: auto;
   margin: 10px 0;
 }
-
+.accordion__question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 @media (min-width: 768px) {
 }
 
