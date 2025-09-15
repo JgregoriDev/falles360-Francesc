@@ -6,16 +6,20 @@
   margin-bottom: 1rem;
 }
 .container__princing--free {
-  width: 100%;
+  /* width: 100%; */
 }
 .container__princing--premium {
-  width: 100%;
+  /* width: 100%; */
 }
 .container__princing-list {
   list-style: none;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
+  margin: 0;
+  padding: 0;
   background-color: var(--fifthColor);
 }
 .conteiner__pricing-element {
