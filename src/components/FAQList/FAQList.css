@@ -26,8 +26,6 @@
   overflow: hidden;
   padding-left: 7.5%;
   padding-right: 7.5%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   margin: 0;
   transition: ease all 0.5s;
 }
@@ -49,8 +47,11 @@
   background-color: var(--primaryColorHover);
 }
 
+
 .accordion input:checked + .accordion__question {
   background-color: var(--thirdColor);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 .accordion input:checked + .accordion__question:hover {
   background-color: var(--thirdColorHover);
@@ -61,7 +62,14 @@
 .accordion input:checked ~ .accordion__answer {
   display: block;
   height: auto;
-  margin: 10px 0;
+  border: 1px solid #3e3e3e6e;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgba(62, 62, 62, 0.43);
+  border-top: 0;
+  margin-bottom: 20px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 @media screen and (min-width: 768px) {

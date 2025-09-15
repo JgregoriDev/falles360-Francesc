@@ -2,7 +2,7 @@ import "./Beneficios.css";
 export const Beneficios = () => {
   return (
     <section id="benefinicios" className="section">
-      <h2 className="container__title">Beneficios</h2>
+      <h2 className="container__title mb-2 mt-2">Beneficios</h2>
       <div className="container__beneficios">
         <div className="">
           <svg
