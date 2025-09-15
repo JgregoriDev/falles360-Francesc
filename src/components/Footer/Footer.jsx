@@ -15,6 +15,7 @@ export const Footer = () => {
                   <a
                     href="/falles360-Francesc#benefinicios"
                     className="footer__nav-link"
+                    title="Beneficios"
                   >
                     Beneficios
                   </a>
@@ -23,6 +24,7 @@ export const Footer = () => {
                   <a
                     href="/falles360-Francesc#tablasPrecios"
                     className="footer__nav-link"
+                    title="Precios"
                   >
                     Precios
                   </a>
@@ -31,14 +33,16 @@ export const Footer = () => {
                   <a
                     href="/falles360-Francesc#patrocinadors"
                     className="footer__nav-link"
+                    title="Patrocinadores"
                   >
-                    Patrocinadors
+                    Patrocinadores
                   </a>
                 </li>
                 <li className="footer__nav-item">
                   <a
                     href="/falles360-Francesc#preguntas"
                     className="footer__nav-link"
+                    title="FAQS"
                   >
                     FAQS
                   </a>
@@ -47,6 +51,7 @@ export const Footer = () => {
                   <a
                     href="/falles360-Francesc#contacto"
                     className="footer__nav-link"
+                    title="Contacto"
                   >
                     Contacto
                   </a>
@@ -55,6 +60,7 @@ export const Footer = () => {
                   <Link
                     to="/falles360-Francesc/politica-privacidad"
                     className="footer__nav-link"
+                    title="Beneficios"
                     title="Política de protección de dado"
                   >
                     Política de privacidad
