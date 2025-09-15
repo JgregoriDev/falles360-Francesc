@@ -11,18 +11,16 @@
 
 }
 .container__beneficios > div {
-  border: 2px solid transparent; /* Borde inicial transparente */
+  border: 2px solid transparent; 
   transition: all 0.3s ease-in-out;
 }
 
 .container__beneficios > div:hover {
-  border-color: var(--fourtColorHover); /* El borde se vuelve visible en el hover */
-  box-shadow: 0 0 10px var(--fourtColorHover); /* Sombra para el efecto de "iluminado" */
+  border-color: var(--fourtColorHover);
+  box-shadow: 0 0 10px var(--fourtColorHover);
 }
 .container__title{
   font-size: xx-large;
-  margin-top: 2.25em;
-  margin-bottom: 1.25em;
 }
 .benefits__title{
   font-size: clamp(1.65rem, 5vw + 1rem, 2rem);
@@ -70,5 +68,5 @@
   }
 }
 .container__beneficios > div:hover .benefits__icon {
-  animation: blink 1s; /* Aplica la animación */
+  animation: blink 1s; 
 }
