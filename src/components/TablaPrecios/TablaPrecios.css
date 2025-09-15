@@ -58,13 +58,12 @@
   background-color: var(--primaryColor);
   text-transform: uppercase;
   text-align: center;
-  margin-right: 1.5625rem;
   font-weight: bold;
-  margin-left: 1.5625rem;
   color: white;
   border: 0.25rem solid var(--primaryColor);
   border-radius: 1.5625rem;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   animation: 0.5s linear 1s infinite alternate slide-in;
 }
 .conteiner__pricing-element--inline:hover {
@@ -80,6 +79,10 @@
   }
   .container__princing--premium {
     width: 50%;
+  }
+  .conteiner__pricing-element--inline{
+    padding-right: 1.5625rem;
+    padding-left: 1.5625rem;
   }
   
 }
