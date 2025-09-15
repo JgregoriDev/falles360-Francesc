@@ -1,9 +1,9 @@
-j.container__icon {
+.container__icon {
   width: 100%;
 
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
 }
 .logo__header {
   color: var(--thirdColor);
