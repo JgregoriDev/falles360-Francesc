@@ -3,7 +3,7 @@ export const TablaPrecios = () => {
   return (
     <section id="tablasPrecios" className="">
       <h2 className="container__princing-title">Tabla de precios</h2>
-      <div className="container__pricing">
+      <div className="container__pricing pb-2">
         <div className="container__princing--free">
           <h3 className="container__princing-subtitle">Usuario gratuito</h3>
           <ul className="container__princing-list">

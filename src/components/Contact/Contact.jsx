@@ -134,7 +134,7 @@ export const Contact = () => {
           Envíanos tu consulta
         </button>
         {succesfull && (
-          <small className="form__successfull">
+          <small className="form__successfull mt-1 mb-1">
             El mensaje ha sido enviado correctamente
           </small>
         )}

@@ -5,12 +5,7 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.container__princing--free {
-  /* width: 100%; */
-}
-.container__princing--premium {
-  /* width: 100%; */
-}
+
 .container__princing-list {
   list-style: none;
   display: flex;
@@ -86,6 +81,7 @@
   .container__princing--premium {
     width: 50%;
   }
+  
 }
 
 @media screen and (min-width: 992px) {
