@@ -26,7 +26,8 @@
   justify-content: center;
   align-items: center;
 
-  width: 175px;
+  width: 90%;
+  
 }
 .Hero__container--buttons {
   display: flex;
@@ -78,5 +79,8 @@
   .Hero__container--titles {
     align-items: center;
     justify-content: center;
+  }
+  .text__notunderline{
+    width: 175px;
   }
 }
