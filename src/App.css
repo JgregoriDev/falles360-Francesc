@@ -28,8 +28,6 @@
 .button--outline {
   background-color: none;
   text-align: center;
-  margin-right: 1.5625rem;
-  margin-left: 1.5625rem;
   border: 0.25rem solid var(--primaryColor);
   color: var(--primaryColor);
   font-weight: bold;
@@ -37,6 +35,8 @@
   text-transform: uppercase;
   padding: 1rem;
   animation: 0.5s linear 1s infinite alternate slide-in;
+  min-width: 50%;
+  max-width: 90%;
 }
 .button--outline:hover {
   background-color: var(--primaryColor);
