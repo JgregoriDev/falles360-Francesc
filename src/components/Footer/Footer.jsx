@@ -9,65 +9,64 @@ export const Footer = () => {
           <Logo />
         </div>
         <div className="footer__links">
-            <nav className="footer__nav">
-              <ul className="footer__nav-list">
-                <li className="footer__nav-item">
-                  <a
-                    href="/falles360-Francesc#benefinicios"
-                    className="footer__nav-link"
-                    title="Beneficios"
-                  >
-                    Beneficios
-                  </a>
-                </li>
-                <li className="footer__nav-item">
-                  <a
-                    href="/falles360-Francesc#tablasPrecios"
-                    className="footer__nav-link"
-                    title="Precios"
-                  >
-                    Precios
-                  </a>
-                </li>
-                <li className="footer__nav-item">
-                  <a
-                    href="/falles360-Francesc#patrocinadors"
-                    className="footer__nav-link"
-                    title="Patrocinadores"
-                  >
-                    Patrocinadores
-                  </a>
-                </li>
-                <li className="footer__nav-item">
-                  <a
-                    href="/falles360-Francesc#preguntas"
-                    className="footer__nav-link"
-                    title="FAQS"
-                  >
-                    FAQS
-                  </a>
-                </li>
-                <li className="footer__nav-item">
-                  <a
-                    href="/falles360-Francesc#contacto"
-                    className="footer__nav-link"
-                    title="Contacto"
-                  >
-                    Contacto
-                  </a>
-                </li>
-                <li className="footeer__nav-item">
-                  <Link
-                    to="/falles360-Francesc/politica-privacidad"
-                    className="footer__nav-link"
-                    title="Beneficios"
-                    title="Política de protección de dado"
-                  >
-                    Política de privacidad
-                  </Link>
-                </li>
-              </ul>
-            </nav>
+          <nav className="footer__nav">
+            <ul className="footer__nav-list">
+              <li className="footer__nav-item">
+                <a
+                  href="/falles360-Francesc#benefinicios"
+                  className="footer__nav-link"
+                  title="Beneficios"
+                >
+                  Beneficios
+                </a>
+              </li>
+              <li className="footer__nav-item">
+                <a
+                  href="/falles360-Francesc#tablasPrecios"
+                  className="footer__nav-link"
+                  title="Precios"
+                >
+                  Precios
+                </a>
+              </li>
+              <li className="footer__nav-item">
+                <a
+                  href="/falles360-Francesc#patrocinadors"
+                  className="footer__nav-link"
+                  title="Patrocinadores"
+                >
+                  Patrocinadores
+                </a>
+              </li>
+              <li className="footer__nav-item">
+                <a
+                  href="/falles360-Francesc#preguntas"
+                  className="footer__nav-link"
+                  title="FAQS"
+                >
+                  FAQS
+                </a>
+              </li>
+              <li className="footer__nav-item">
+                <a
+                  href="/falles360-Francesc#contacto"
+                  className="footer__nav-link"
+                  title="Contacto"
+                >
+                  Contacto
+                </a>
+              </li>
+              <li className="footeer__nav-item">
+                <Link
+                  to="/falles360-Francesc/politica-privacidad"
+                  className="footer__nav-link"
+                  title="Política de privacidad"
+                >
+                  Política de privacidad
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
       <div className="footer__social-network">
