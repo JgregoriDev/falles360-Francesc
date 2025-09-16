@@ -10,6 +10,9 @@
   fill: var(--thirdColorHover);
 
 }
+.benefits__body{
+  padding: 0 1em;
+}
 .container__beneficios > div {
   border: 2px solid transparent; 
   transition: all 0.3s ease-in-out;

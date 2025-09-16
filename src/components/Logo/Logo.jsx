@@ -1,4 +1,4 @@
-import pathLogo from "@/assets/logo128x128.jpg";
+import pathLogo from "@/assets/fallera360128x128.webp";
 import "./Logo.css";
 export const Logo = () => {
   return (
