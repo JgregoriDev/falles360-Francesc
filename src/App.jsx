@@ -10,7 +10,7 @@ function App() {
     <>
       {/* 100% width */}
       <Header />
-      {location === "/falles360-Francesc" ? <Hero /> : null}
+      {location === "/falles360-Francesc" || location === "/falles360-Francesc/" ? <Hero /> : null}
       {/* 80% width */}
       <div className="container">
         <div className="container__left-site">&nbsp;</div>
