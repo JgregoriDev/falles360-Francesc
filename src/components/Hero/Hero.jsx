@@ -1,4 +1,4 @@
-import screenShotApp from "../../assets/app.webp";
+import screenShotApp from "@/assets/app_view.webp";
 import "./Hero.css";
 export const Hero = () => {
   return (
