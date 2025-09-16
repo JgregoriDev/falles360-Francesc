@@ -2,7 +2,7 @@ import "./TablaPrecios.css";
 export const TablaPrecios = () => {
   return (
     <section id="tablasPrecios" className="">
-      <h2 className="container__princing-title">Tabla de precios</h2>
+      <h2 className="container__princing-title">Precios</h2>
       <div className="container__pricing pb-2">
         <div className="container__princing--free">
           <h3 className="container__princing-subtitle">Usuario gratuito</h3>
