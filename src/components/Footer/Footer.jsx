@@ -13,7 +13,7 @@ export const Footer = () => {
             <ul className="footer__nav-list">
               <li className="footer__nav-item">
                 <a
-                  href="/falles360-Francesc#benefinicios"
+                  href="/falles360-Francesc/#benefinicios"
                   className="footer__nav-link"
                   title="Beneficios"
                 >
@@ -22,7 +22,7 @@ export const Footer = () => {
               </li>
               <li className="footer__nav-item">
                 <a
-                  href="/falles360-Francesc#tablasPrecios"
+                  href="/falles360-Francesc/#tablasPrecios"
                   className="footer__nav-link"
                   title="Precios"
                 >
@@ -31,7 +31,7 @@ export const Footer = () => {
               </li>
               <li className="footer__nav-item">
                 <a
-                  href="/falles360-Francesc#patrocinadors"
+                  href="/falles360-Francesc/#patrocinadors"
                   className="footer__nav-link"
                   title="Patrocinadores"
                 >
@@ -40,7 +40,7 @@ export const Footer = () => {
               </li>
               <li className="footer__nav-item">
                 <a
-                  href="/falles360-Francesc#preguntas"
+                  href="/falles360-Francesc/#preguntas"
                   className="footer__nav-link"
                   title="FAQS"
                 >
@@ -49,7 +49,7 @@ export const Footer = () => {
               </li>
               <li className="footer__nav-item">
                 <a
-                  href="/falles360-Francesc#contacto"
+                  href="/falles360-Francesc/#contacto"
                   className="footer__nav-link"
                   title="Contacto"
                 >
