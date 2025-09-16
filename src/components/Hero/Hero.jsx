@@ -19,7 +19,7 @@ export const Hero = () => {
             className="Hero__image"
             src={`${screenShotApp}`}
             height={`475px`}
-            alt="Captura de pantalla de falla 360"
+            alt="App de falla 360 Agregando un evento"
             loading="lazy"
           />
         </div>
