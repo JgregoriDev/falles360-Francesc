@@ -5,6 +5,7 @@ import {
   Rail,
   FAQList,
   Contact,
+  SliderUser,
   Grid,
   Beneficios,
   Sponsors,
@@ -33,6 +34,7 @@ export const Home = () => {
   return (
     <div>
       <Coins />
+      <SliderUser />
       <Grid />
       <Beneficios />
       <Rail />
