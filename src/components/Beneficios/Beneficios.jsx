@@ -9,7 +9,7 @@ export const Beneficios = () => {
             xmlns="http://www.w3.org/2000/svg"
             height={50}
             width={50}
-            className="benefits__icon"
+            className="benefits__icon mt-2"
             viewBox="0 0 640 640"
           >
             <path d="M224 64C206.3 64 192 78.3 192 96L192 128L160 128C124.7 128 96 156.7 96 192L96 240L544 240L544 192C544 156.7 515.3 128 480 128L448 128L448 96C448 78.3 433.7 64 416 64C398.3 64 384 78.3 384 96L384 128L256 128L256 96C256 78.3 241.7 64 224 64zM96 288L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 288L96 288z" />
@@ -23,11 +23,10 @@ export const Beneficios = () => {
           </p>
         </div>
         <div className="">
-
           <svg
             height={50}
             width={50}
-            className="benefits__icon"
+            className="benefits__icon mt-2"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 640 640"
           >
@@ -39,11 +38,10 @@ export const Beneficios = () => {
           </p>
         </div>
         <div className="">
-
           <svg
             height={50}
             width={50}
-            className="benefits__icon"
+            className="benefits__icon mt-2"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 640 640"
           >
@@ -56,11 +54,10 @@ export const Beneficios = () => {
           </p>
         </div>
         <div className="">
-
           <svg
             height={50}
             width={50}
-            className="benefits__icon"
+            className="benefits__icon mt-2"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 640 640"
           >
@@ -75,11 +72,10 @@ export const Beneficios = () => {
           </p>
         </div>
         <div className="">
-
           <svg
             height={50}
             width={50}
-            className="benefits__icon"
+            className="benefits__icon mt-2"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 640 640"
           >
@@ -92,11 +88,10 @@ export const Beneficios = () => {
           </p>
         </div>
         <div className="">
-
           <svg
             height={50}
             width={50}
-            className="benefits__icon"
+            className="benefits__icon mt-2"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 640 640"
           >
@@ -109,11 +104,10 @@ export const Beneficios = () => {
           </p>
         </div>
         <div className="">
-
           <svg
             height={50}
             width={50}
-            className="benefits__icon"
+            className="benefits__icon mt-2"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 640 640"
           >
@@ -126,11 +120,10 @@ export const Beneficios = () => {
           </p>
         </div>
         <div className="">
-
           <svg
             height={50}
             width={50}
-            className="benefits__icon"
+            className="benefits__icon mt-2"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 640 640"
           >
@@ -143,15 +136,14 @@ export const Beneficios = () => {
           </p>
         </div>
         <div className="">
-
           <svg
             height={50}
             width={50}
-            className="benefits__icon"
+            className="benefits__icon mt-2"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 640 640"
           >
-            <path d="M288 64C323.3 64 352 85.5 352 112C352 122.4 347.6 132 340 139.9C333.4 146.8 328 155.2 328 164.8C328 179.8 340.2 192 355.2 192L400 192C426.5 192 448 213.5 448 240L448 284.8C448 299.8 460.2 312 475.2 312C484.7 312 493.2 306.6 500.1 300C508 292.5 517.6 288 528 288C554.5 288 576 316.7 576 352C576 387.3 554.5 416 528 416C517.6 416 507.9 411.6 500.1 404C493.2 397.4 484.8 392 475.2 392C460.2 392 448 404.2 448 419.2L448 528C448 554.5 426.5 576 400 576L343.2 576C330.4 576 320 565.6 320 552.8C320 543.6 325.8 535.5 333.2 530C344.8 521.3 352 509.3 352 496C352 469.5 323.3 448 288 448C252.7 448 224 469.5 224 496C224 509.3 231.2 521.3 242.8 530C250.2 535.5 256 543.5 256 552.8C256 565.6 245.6 576 232.8 576L112 576C85.5 576 64 554.5 64 528L64 407.2C64 394.4 74.4 384 87.2 384C96.4 384 104.5 389.8 110 397.2C118.7 408.8 130.7 416 144 416C170.5 416 192 387.3 192 352C192 316.7 170.5 288 144 288C130.7 288 118.7 295.2 110 306.8C104.5 314.2 96.5 320 87.2 320C74.4 320 64 309.6 64 296.8L64 240C64 213.5 85.5 192 112 192L220.8 192C235.8 192 248 179.8 248 164.8C248 155.3 242.6 146.8 236 139.9C228.5 132 224 122.4 224 112C224 85.5 252.7 64 288 64z" />
+            <path d="M528 320C528 205.1 434.9 112 320 112C205.1 112 112 205.1 112 320C112 434.9 205.1 528 320 528C434.9 528 528 434.9 528 320zM64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576C178.6 576 64 461.4 64 320z" />
           </svg>
           <h3 className="benefits__title">Integración total</h3>
           <p className="benefits__body">
