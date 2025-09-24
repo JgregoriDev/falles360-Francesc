@@ -5,6 +5,7 @@ import {
   Rail,
   FAQList,
   Contact,
+  Grid,
   Beneficios,
   Sponsors,
 } from "@/components";
@@ -32,6 +33,7 @@ export const Home = () => {
   return (
     <div>
       <Coins />
+      <Grid />
       <Beneficios />
       <Rail />
       <TablaPrecios />
