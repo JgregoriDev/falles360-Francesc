@@ -3,7 +3,6 @@ import pathPhotoGMaps from "@/assets/CustomGMAPS.webp";
 const Grid = () => {
   return (
     <section>
-      <h2>Grid</h2>
       <div class="grid-section">
         <div class="grid-section__item grid-section__item--image">
           <img
