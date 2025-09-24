@@ -23,9 +23,11 @@
   padding-bottom: 1rem;
   text-align: center;
   transition: background 0.3s, color 0.3s;
+  cursor: pointer;
 }
 
 .conteiner__pricing-element:hover {
+  cursor: pointer;
   background: var(--fifthColorHover); /* Cambia color al hacer hover */
   color: var(--primaryColorHover);
   color: var(--primaryColorHover);
@@ -68,8 +70,8 @@
   animation: 0.5s linear 1s infinite alternate slide-in;
 }
 .conteiner__pricing-element--inline:hover {
-  background-color: #C83250;
-  color: #FFF;
+  background-color: #c83250;
+  color: #fff;
 }
 @media screen and (min-width: 768px) {
   .container__pricing {
@@ -81,12 +83,172 @@
   .container__princing--premium {
     width: 50%;
   }
-  .conteiner__pricing-element--inline{
+  .conteiner__pricing-element--inline {
     padding-right: 1.5625rem;
     padding-left: 1.5625rem;
   }
-  
 }
 
 @media screen and (min-width: 992px) {
+}
+
+.container__pricing {
+    display: flex;
+    flex-direction: column;
+    background: var(--fifthColor);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container__princing-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    background-color: var(--fifthColor);
+}
+
+.conteiner__pricing-element {
+    color: var(--primaryColor);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.conteiner__pricing-element:hover {
+    background: var(--fifthColorHover); /* Cambia color al hacer hover */
+    color: var(--primaryColorHover);
+}
+
+.container__princing-title {
+    font-size: 2rem;
+}
+
+.container__princing-subtitle {
+    font-size: large;
+}
+
+.conteiner__pricing-element--outline {
+    border: 0.25rem solid var(--primaryColor);
+    color: var(--primaryColor);
+    font-weight: bold;
+    border-radius: 1.5625rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    animation: 0.5s linear 1s infinite alternate slide-in;
+}
+
+.conteiner__pricing-element--outline:hover {
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+.conteiner__pricing-element--inline {
+    background-color: var(--primaryColor);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border: 0.25rem solid var(--primaryColor);
+    border-radius: 1.5625rem;
+    padding: 1rem;
+    animation: 0.5s linear 1s infinite alternate slide-in;
+}
+
+.conteiner__pricing-element--inline:hover {
+    background-color: #c83250;
+    color: #fff;
+}
+
+/* Media Queries para Responsividad */
+@media screen and (min-width: 768px) {
+    .container__pricing {
+        flex-direction: row;
+    }
+    .container__princing--free,
+    .container__princing--premium {
+        width: 50%; /* Cada sección ocupa la mitad del ancho */
+    }
+    .conteiner__pricing-element--inline {
+        padding-right: 1.5625rem;
+        padding-left: 1.5625rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container__princing-title {
+        font-size: 2.5rem; /* Aumentar el tamaño del título en pantallas grandes */
+    }
+    .container__princing-subtitle {
+        font-size: 1.5rem; /* Aumentar el tamaño del subtítulo en pantallas grandes */
+    }
+}
+
+.pricing-table {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+thead {
+    text-align: center;
+    background-color: #e74c3c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+  cursor: pointer;
+    padding: 15px;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+tr.header-table {
+    background-color: var(--primaryColor);
+    font-size: 2rem;
+}
+
+td.td__principal {
+    font-size: 1.5rem;
+}
+
+tfoot {
+    height: 100px;
+}
+
+/* Media Queries para la tabla */
+@media screen and (max-width: 768px) {
+    th, td {
+        padding: 10px; /* Reducir el padding en pantallas pequeñas */
+        font-size: 1rem; /* Ajustar el tamaño de fuente */
+    }
+
+    .pricing-table {
+        padding: 15px; /* Reducir el padding de la tabla */
+    }
+
+    .container__princing-title {
+        font-size: 1.5rem; /* Ajustar el tamaño del título */
+    }
 }

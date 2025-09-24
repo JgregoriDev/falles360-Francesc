@@ -3,46 +3,92 @@ export const TablaPrecios = () => {
   return (
     <section id="tablasPrecios" className="">
       <h2 className="container__princing-title">Precios</h2>
-      <div className="container__pricing pb-2">
-        <div className="container__princing--free">
-          <h3 className="container__princing-subtitle">Usuario gratuito</h3>
-          <ul className="container__princing-list">
-            <li id="li1" className="conteiner__pricing-element">Eventos en tiempo real</li>
-            <li id="li2" className="conteiner__pricing-element">Recibir notificaciones automáticas</li>
-            <li id="li3" className="conteiner__pricing-element">Ver mapa interactivo de fallas</li>
-            <li id="li4" className="conteiner__pricing-element">Dinámicas gamificadas</li>
-            <li id="li4" className="conteiner__pricing-element">Pago directo desde el móvil</li>
-            <li id="li4" className="conteiner__pricing-element">Acceso a redes sociales para disfrutar de los eventos en fallas</li>
-            <li  className="conteiner__pricing-element">❌</li>
-            <li  className="conteiner__pricing-element">❌</li>
-            <li  className="conteiner__pricing-element">❌</li>
-            <li  className="conteiner__pricing-element">❌</li>
-            <li  className="conteiner__pricing-element">❌</li>
-            <li  className="conteiner__pricing-element">❌</li>
-            <li  className="conteiner__pricing-element">❌</li>
-            <li className="conteiner__pricing-element--outline">Precio total: gratis</li>
-          </ul>
-        </div>
-        <div className="container__princing--premium">
-          <h3 className="container__princing-subtitle">Usuario de pago</h3>
-          <ul className="container__princing-list">
-            <li id="li5" className="conteiner__pricing-element">Eventos en tiempo real</li>
-            <li id="li6" className="conteiner__pricing-element">Recibir notificaciones automáticas</li>
-            <li id="li7" className="conteiner__pricing-element">Ver mapa interactivo de fallas</li>
-            <li id="li8" className="conteiner__pricing-element">Dinámicas gamificadas</li>
-            <li id="li8" className="conteiner__pricing-element">Pago directo desde el móvil</li>
-            <li id="li4" className="conteiner__pricing-element">Acceso a redes sociales para disfrutar de los eventos en fallas</li>
-            <li id="li8" className="conteiner__pricing-element">Evitar colas en la barra (sin tokens)</li>
-            <li id="li8" className="conteiner__pricing-element">Acceso con pulsera o llavero NFC</li>
-            <li id="li8" className="conteiner__pricing-element">Inscripciones automáticas a eventos</li>
-            <li id="li8" className="conteiner__pricing-element">Acceso a contenido exclusivo para falleros</li>
-            <li id="li8" className="conteiner__pricing-element">Grupo privado digital de tu falla</li>
-            <li id="li8" className="conteiner__pricing-element">Inscripciones automáticas a eventos</li>
-            <li id="li8" className="conteiner__pricing-element">Participar en sorteos</li>
-            <li className="conteiner__pricing-element--inline">Precio total: 20€</li>
-          </ul>
-        </div>
-      </div>
+    
+      <table>
+        <thead>
+          <tr className="header-table">
+            <th className="theader">Características</th>
+            <th className="theader">Usuario Gratuito</th>
+            <th className="theader">Usuario de Pago (20€)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="td__principal">Eventos en tiempo real</td>
+            <td>✔️</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td className="td__principal">Recibir notificaciones automáticas</td>
+            <td>✔️</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td className="td__principal">Ver mapa interactivo de fallas</td>
+            <td>✔️</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td className="td__principal">Dinámicas gamificadas</td>
+            <td>✔️</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td className="td__principal">Pago directo desde el móvil</td>
+            <td>✔️</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td className="td__principal">Acceso a redes sociales para disfrutar de eventos</td>
+            <td>✔️</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td className="td__principal">Evitar colas en la barra (sin tokens)</td>
+            <td>❌</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td className="td__principal">Acceso con pulsera o llavero NFC</td>
+            <td>❌</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td className="td__principal">Inscripciones automáticas a eventos</td>
+            <td>❌</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td className="td__principal">Acceso a contenido exclusivo para falleros</td>
+            <td>❌</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td className="td__principal">Grupo privado digital de tu falla</td>
+            <td>❌</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td className="td__principal">Participar en sorteos</td>
+            <td>❌</td>
+            <td>✔️</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr className="pt-2 pb-2">
+            {/* Todo: Resposive buttons */}
+            <th></th>
+            <th class="">
+              <a href="#" class="conteiner__pricing-element--outline text__notunderline">¡Únete gratis!</a>
+            </th>
+            <th>
+              <a href="#" class="conteiner__pricing-element--inline paid-button">
+                ¡Suscríbete ahora!
+              </a>
+            </th>
+          </tr>
+        </tfoot>
+      </table>
     </section>
   );
 };
