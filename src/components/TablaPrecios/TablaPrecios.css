@@ -28,6 +28,7 @@
 .conteiner__pricing-element:hover {
   background: var(--fifthColorHover); /* Cambia color al hacer hover */
   color: var(--primaryColorHover);
+  color: var(--primaryColorHover);
   cursor: pointer;
 }
 
@@ -67,8 +68,8 @@
   animation: 0.5s linear 1s infinite alternate slide-in;
 }
 .conteiner__pricing-element--inline:hover {
-  background-color: var(--primaryColorHover);
-  color: rgba(17, 17, 17, 0.8);
+  background-color: #C83250;
+  color: #FFF;
 }
 @media screen and (min-width: 768px) {
   .container__pricing {
