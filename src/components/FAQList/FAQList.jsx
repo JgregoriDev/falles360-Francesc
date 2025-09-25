@@ -4,8 +4,6 @@ export const FAQList = () => {
   if (FAQs === undefined || FAQs.length === 0) {
     return "No hay";
   }
-  // TODO: La flecha no sale a la misma altura que el texto corregir 
-  // TODO: Darle mas especio al texto de la respuesta y la pregunta
   return (
     <section id="preguntas" className="section faqs">
       <h2>Preguntas y respuestas sobre nuestros servicios</h2>
