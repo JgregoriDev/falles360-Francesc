@@ -30,6 +30,7 @@
   text-align: center;
   border: 0.25rem solid var(--primaryColor);
   color: var(--primaryColor);
+  background-color: transparent;
   font-weight: bold;
   border-radius: 1.5625rem;
   text-transform: uppercase;

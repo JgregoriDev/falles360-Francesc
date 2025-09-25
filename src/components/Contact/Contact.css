@@ -17,6 +17,12 @@
   border: none;
   border-bottom: 1px solid #797979;
 }
+.form__field::placeholder {
+  color: #b3b3b3;
+}
+.form__field--error{
+  border-bottom: 2px solid red;
+}
 .form__field:focus {
   border-bottom: 2px solid #6466f7;
 }

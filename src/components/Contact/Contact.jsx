@@ -83,36 +83,39 @@ export const Contact = () => {
       <form className="contact__form" onSubmit={handleSubmit}>
         <label htmlFor="name">Nombre:</label>
         <input
-          className="form__field"
+          className={`form__field ${errors?.name ? "form__field--error" : ""}`}
+          placeholder="Tu nombre"
           form__textareaype="text"
           name="name"
           id="name"
           value={formData.name}
           onChange={handleChange}
         />
-        {errors.name && <small className="form__errors">{errors.name}</small>}
+        {errors?.name && <small className="form__errors">{errors?.name}</small>}
 
         <label htmlFor="email">Correo electrónico:</label>
         <input
-          className="form__field"
+          className={`form__field ${errors?.email ? "form__field--error" : ""}`}
+          placeholder="Tu correo electrónico"
           type="text"
           name="email"
           id="email"
           value={formData.email}
           onChange={handleChange}
         />
-        {errors.email && <small className="form__errors">{errors.email}</small>}
+        {errors?.email && <small className="form__errors">{errors?.email}</small>}
 
         <label htmlFor="subject">Asunto:</label>
         <textarea
-          className="form__field form__textarea"
+          className={`form__field form__textarea ${errors?.subject ? "form__field--error" : ""}`}
+          placeholder="Tu consulta"
           name="subject"
           id="subject"
           value={formData.subject}
           onChange={handleChange}
         />
-        {errors.subject && (
-          <small className="form__errors">{errors.subject}</small>
+        {errors?.subject && (
+          <small className="form__errors">{errors?.subject}</small>
         )}
 
         <p>
@@ -128,7 +131,7 @@ export const Contact = () => {
             la política de privacidad
           </a></label>
         </p>
-        {errors.rgpd && <small className="form__errors">{errors.rgpd}</small>}
+        {errors?.rgpd && <small className="form__errors">{errors?.rgpd}</small>}
 
         <button className="button--outline" type="submit">
           Envíanos tu consulta
