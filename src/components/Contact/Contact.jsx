@@ -123,6 +123,7 @@ export const Contact = () => {
             type="checkbox"
             name="rgpd"
             id="rgpd"
+            className={`form__checkbox ${errors?.rgpd ? "form__checkbox--error" : ""}`}
             checked={formData.rgpd}
             onChange={handleChange}
           />
