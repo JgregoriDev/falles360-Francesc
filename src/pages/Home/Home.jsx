@@ -10,10 +10,12 @@ import {
   Beneficios,
   Sponsors,
 } from "@/components";
+import setTitle from '@/utils/setTitle';
 import "./Home.css";
 export const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
+    setTitle({ title: 'Página Principal' });
     const handleScroll = () => {
       if (
         document.body.scrollTop > 20 ||
