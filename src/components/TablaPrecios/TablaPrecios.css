@@ -60,6 +60,7 @@
 .conteiner__pricing-element--inline {
   background-color: var(--primaryColor);
   text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
   font-weight: bold;
   color: white;
