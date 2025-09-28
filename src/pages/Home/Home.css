@@ -1,10 +1,11 @@
 .btn--scroll {
   position: fixed;
-  height: 45px;
-  width: 45px;
-  background-color: transparent;
+  background-color: var(--primaryColor);
+  height: 50px;
+  width: 50px;
+  background-color: var(--primaryColor);
   
-  fill: var(--primaryColor);
+  fill: white;
   border: none;
   cursor: pointer;
   border-radius: 50%;
@@ -12,7 +13,8 @@
   right: 0.625rem;
 }
 .btn--scroll:hover {
-  fill: var(--primaryColorHover);
+  background-color: var(--primaryColorHover);
+  fill: rgba(255, 255, 255, 0.8);
 }
 
 p {
@@ -28,7 +30,5 @@ p {
 
 @media (min-width: 992px) {
   .btn--scroll {
-    height: 75px;
-    width: 75px;
   }
 }
