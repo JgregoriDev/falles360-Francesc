@@ -1,0 +1,76 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Calendario de Eventos para las Fallas 2025",
+      "fecha": "2025-03-01",
+      "contenido": "Este año, las Fallas de Valencia prometen una serie de eventos emocionantes, desde la plantà hasta la cremà.",
+      "categoria": {
+        "id": 1,
+        "name": "Eventos",
+        "description": "Actividades y celebraciones programadas durante las Fallas.",
+        "filter": "eventos"
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Resultados del Concurso de Fallas 2025",
+      "fecha": "2025-03-02",
+      "contenido": "Los ganadores del concurso de fallas han sido anunciados, destacando la creatividad y el ingenio de los artistas.",
+      "categoria": {
+        "id": 2,
+        "name": "Concursos",
+        "description": "Competencias y premios relacionados con las Fallas.",
+        "filter": "concursos"
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Las Tradiciones de las Fallas: Un Vínculo Cultural",
+      "fecha": "2025-03-03",
+      "contenido": "Exploramos las tradiciones que hacen de las Fallas una celebración única en el mundo.",
+      "categoria": {
+        "id": 3,
+        "name": "Tradiciones",
+        "description": "Costumbres y rituales que forman parte de la celebración de las Fallas.",
+        "filter": "tradiciones"
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "Historia de las Fallas: De la Antigüedad a Hoy",
+      "fecha": "2025-03-04",
+      "contenido": "Un vistazo a la rica historia de las Fallas y su evolución a lo largo de los años.",
+      "categoria": {
+        "id": 4,
+        "name": "Historia",
+        "description": "Información sobre el origen y la evolución de las Fallas en Valencia.",
+        "filter": "historia"
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "Conociendo a los Artistas Falleros",
+      "fecha": "2025-03-05",
+      "contenido": "Entrevistas con algunos de los artistas falleros más destacados y sus obras maestras.",
+      "categoria": {
+        "id": 5,
+        "name": "Artistas",
+        "description": "Información sobre los artistas falleros y sus obras.",
+        "filter": "artistas"
+      }
+    },
+    {
+      "id": 6,
+      "titulo": "Gastronomía en las Fallas: Platos Imperdibles",
+      "fecha": "2025-03-06",
+      "contenido": "Descubre los platos típicos que no te puedes perder durante las Fallas de Valencia.",
+      "categoria": {
+        "id": 6,
+        "name": "Gastronomía",
+        "description": "Platos típicos y bebidas que se disfrutan durante las Fallas.",
+        "filter": "gastronomia"
+      }
+    }
+  ]
+}
