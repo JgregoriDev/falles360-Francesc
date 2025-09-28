@@ -1,11 +1,16 @@
 import "@/App.css";
+import { useEffect } from "react";
 import { Header, Footer, Hero } from "@/components";
 import { Home } from "@/pages/Home/Home.jsx";
 import { PoliticaPrivadad } from "@/pages/PoliticaPrivadad/PoliticaPrivadad";
-import { Link, Route, Switch } from "wouter";
-import { useBrowserLocation } from "wouter/use-browser-location";
+import { Link, Route, Switch, useLocation } from "wouter";
 function App() {
-  const [location] = useBrowserLocation();
+    const [location, navigate] = useLocation();
+    useEffect(() => {
+      console.log("Location changed to:", location);
+      window.scrollTo(0, 0);
+    }, [location]);
+  // const [location] = useBrowserLocation();
   return (
     <>
       {/* 100% width */}
