@@ -56,6 +56,15 @@ export const Footer = () => {
                   Contacto
                 </a>
               </li>
+                    <li className="footeer__nav-item">
+                <Link
+                  to="/falles360-Francesc/Blog"
+                  className="footer__nav-link"
+                  title="Política de privacidad"
+                >
+                  Blog
+                </Link>
+              </li>
               <li className="footeer__nav-item">
                 <Link
                   to="/falles360-Francesc/politica-privacidad"
@@ -65,6 +74,7 @@ export const Footer = () => {
                   Política de privacidad
                 </Link>
               </li>
+        
             </ul>
           </nav>
         </div>

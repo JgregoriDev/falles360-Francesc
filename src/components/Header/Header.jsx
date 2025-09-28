@@ -27,6 +27,9 @@ export const Header = () => {
                     <li className="header__nav-item">
                         <a href="/falles360-Francesc#contacto" className="header__nav-link">Contacto</a>
                     </li>
+                    <li className="header__nav-item">
+                        <a href="/falles360-Francesc/blog" className="header__nav-link">Blog</a>
+                    </li>
                     {/* <li className="header__nav-item">
                         <Link href="/falles360-Francesc#" className="header__nav-link">Blog</Link>
                     </li> */}

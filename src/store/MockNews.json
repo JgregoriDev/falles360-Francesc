@@ -1,9 +1,10 @@
 {
-  "noticias": [
+  "news": [
     {
       "id": 1,
       "titulo": "Calendario de Eventos para las Fallas 2025",
       "fecha": "2025-03-01",
+      "imagen": "https://picsum.photos/500/500",
       "contenido": "Este año, las Fallas de Valencia prometen una serie de eventos emocionantes, desde la plantà hasta la cremà.",
       "categoria": {
         "id": 1,
@@ -11,11 +12,13 @@
         "description": "Actividades y celebraciones programadas durante las Fallas.",
         "filter": "eventos"
       }
+
     },
     {
       "id": 2,
       "titulo": "Resultados del Concurso de Fallas 2025",
       "fecha": "2025-03-02",
+      "imagen": "https://picsum.photos/500/500",
       "contenido": "Los ganadores del concurso de fallas han sido anunciados, destacando la creatividad y el ingenio de los artistas.",
       "categoria": {
         "id": 2,
@@ -28,6 +31,7 @@
       "id": 3,
       "titulo": "Las Tradiciones de las Fallas: Un Vínculo Cultural",
       "fecha": "2025-03-03",
+      "imagen": "https://picsum.photos/500/500",
       "contenido": "Exploramos las tradiciones que hacen de las Fallas una celebración única en el mundo.",
       "categoria": {
         "id": 3,
@@ -40,6 +44,7 @@
       "id": 4,
       "titulo": "Historia de las Fallas: De la Antigüedad a Hoy",
       "fecha": "2025-03-04",
+      "imagen": "https://picsum.photos/500/500",
       "contenido": "Un vistazo a la rica historia de las Fallas y su evolución a lo largo de los años.",
       "categoria": {
         "id": 4,
@@ -52,6 +57,7 @@
       "id": 5,
       "titulo": "Conociendo a los Artistas Falleros",
       "fecha": "2025-03-05",
+      "imagen": "https://picsum.photos/500/500",
       "contenido": "Entrevistas con algunos de los artistas falleros más destacados y sus obras maestras.",
       "categoria": {
         "id": 5,
@@ -64,6 +70,7 @@
       "id": 6,
       "titulo": "Gastronomía en las Fallas: Platos Imperdibles",
       "fecha": "2025-03-06",
+      "imagen": "https://picsum.photos/500/500",
       "contenido": "Descubre los platos típicos que no te puedes perder durante las Fallas de Valencia.",
       "categoria": {
         "id": 6,

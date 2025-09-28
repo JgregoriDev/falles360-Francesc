@@ -1,72 +1,40 @@
 {
-  "feed": {
-    "categories": [
-      {
-        "id": 1,
-        "name": "Eventos",
-        "articles": [
-          {
-            "id": 101,
-            "title": "Inauguración de las Fallas 2025",
-            "date": "2025-03-01",
-            "description": "La ciudad de Valencia da inicio a las festividades con la tradicional inauguración.",
-            "location": "Plaza del Ayuntamiento",
-            "url": "https://example.com/inauguracion-fallas-2025"
-          },
-          {
-            "id": 102,
-            "title": "Desfile de Fallas",
-            "date": "2025-03-15",
-            "description": "Un colorido desfile que muestra las mejores fallas de este año.",
-            "location": "Calle Colón",
-            "url": "https://example.com/desfile-fallas"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Concursos",
-        "articles": [
-          {
-            "id": 201,
-            "title": "Concurso de Mascletà",
-            "date": "2025-03-10",
-            "description": "Los mejores pirotécnicos compiten en el famoso concurso de mascletà.",
-            "location": "Plaza de la Virgen",
-            "url": "https://example.com/concurso-mascleta"
-          },
-          {
-            "id": 202,
-            "title": "Premios a la Mejor Falla",
-            "date": "2025-03-19",
-            "description": "Anuncio de los ganadores del concurso a la mejor falla del año.",
-            "location": "Ayuntamiento de Valencia",
-            "url": "/premios-mejor-falla"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "name": "Tradiciones",
-        "articles": [
-          {
-            "id": 301,
-            "title": "La Ofrenda de Flores",
-            "date": "2025-03-17",
-            "description": "Una emotiva tradición donde los valencianos ofrecen flores a la Virgen.",
-            "location": "Plaza de la Virgen",
-            "url": "/ofrenda-flores"
-          },
-          {
-            "id": 302,
-            "title": "La Cremà",
-            "date": "2025-03-19",
-            "description": "El momento culminante de las Fallas, donde se queman las fallas.",
-            "location": "Varias ubicaciones",
-            "url": "/crema-fallas"
-          }
-        ]
-      }
-    ]
-  }
+  "categories": [
+    {
+      "id": 1,
+      "name": "Eventos",
+      "description": "Actividades y celebraciones programadas durante las Fallas.",
+      "filter": "eventos"
+    },
+    {
+      "id": 2,
+      "name": "Concursos",
+      "description": "Competencias y premios relacionados con las Fallas.",
+      "filter": "concursos"
+    },
+    {
+      "id": 3,
+      "name": "Tradiciones",
+      "description": "Costumbres y rituales que forman parte de la celebración de las Fallas.",
+      "filter": "tradiciones"
+    },
+    {
+      "id": 4,
+      "name": "Historia",
+      "description": "Información sobre el origen y la evolución de las Fallas en Valencia.",
+      "filter": "historia"
+    },
+    {
+      "id": 5,
+      "name": "Artistas",
+      "description": "Información sobre los artistas falleros y sus obras.",
+      "filter": "artistas"
+    },
+    {
+      "id": 6,
+      "name": "Gastronomía",
+      "description": "Platos típicos y bebidas que se disfrutan durante las Fallas.",
+      "filter": "gastronomia"
+    }
+  ]
 }
