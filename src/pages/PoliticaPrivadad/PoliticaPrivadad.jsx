@@ -1,9 +1,8 @@
 import { useEffect } from "react";
+import setTitle from '@/utils/setTitle';
 
 export const PoliticaPrivadad = () => {
-  useEffect(()=>{
-    window.scrollTo(0,0)
-  },[])
+  
   // TODO: Corregir scroll por el cambio de pagina
   return (
     <div>
