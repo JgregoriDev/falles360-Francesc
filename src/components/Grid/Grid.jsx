@@ -3,17 +3,17 @@ import pathPhotoGMaps from "@/assets/CustomGMAPS.webp";
 const Grid = () => {
   return (
     <section>
-      <div class="grid-section">
-        <div class="grid-section__item grid-section__item--image">
+      <div className="grid-section">
+        <div className="grid-section__item grid-section__item--image">
           <img
-            class="grid-section__image"
+            className="grid-section__image"
             src={pathPhotoGMaps}
             alt="Imagen de ejemplo"
           />
         </div>
-        <div class="grid-section__content">
-          <h3 class="grid-section__title">Por qué deberias usar Falles 360?</h3>
-          <div class="grid-section__item grid-section__item--text">
+        <div className="grid-section__content">
+          <h3 className="grid-section__title">Por qué deberias usar Falles 360?</h3>
+          <div className="grid-section__item grid-section__item--text">
             <div className="grid-section__grid">
               <div>
                 {" "}

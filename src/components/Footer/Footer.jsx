@@ -106,7 +106,7 @@ export const Footer = () => {
         </a>
       </div>
       {/* Menu */}
-      <p><a className="footer__link" target="_blank" href="https://github.com/JgregoriDev">© 2025 JGregoriDev</a>. Todos los derechos reservados.</p>
+      <p><a title="JGregoriDev" className="footer__link" target="_blank" href="https://github.com/JgregoriDev">© 2025 JGregoriDev</a>. Todos los derechos reservados.</p>
     </footer>
   );
 };
