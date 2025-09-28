@@ -7,7 +7,6 @@ import { Link, Route, Switch, useLocation } from "wouter";
 function App() {
     const [location, navigate] = useLocation();
     useEffect(() => {
-      console.log("Location changed to:", location);
       window.scrollTo(0, 0);
     }, [location]);
   // const [location] = useBrowserLocation();
