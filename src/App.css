@@ -26,6 +26,7 @@
 .container-center-site {
 }
 .button--outline {
+  cursor: pointer;
   background-color: none;
   text-align: center;
   border: 0.25rem solid var(--primaryColor);
