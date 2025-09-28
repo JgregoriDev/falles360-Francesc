@@ -82,7 +82,7 @@ export const TablaPrecios = () => {
               <a href="#" class="conteiner__pricing-element--outline text__notunderline">¡Únete gratis!</a>
             </th>
             <th>
-              <a href="#" class="conteiner__pricing-element--inline paid-button">
+              <a href="#" class="conteiner__pricing-element--inline ">
                 ¡Suscríbete ahora!
               </a>
             </th>
