@@ -2,6 +2,7 @@ import "@/App.css";
 import { useEffect } from "react";
 import { Header, Footer, Hero } from "@/components";
 import { Home } from "@/pages/Home/Home.jsx";
+import  Blog  from "@/pages/Blog/Blog.jsx";
 import { PoliticaPrivadad } from "@/pages/PoliticaPrivadad/PoliticaPrivadad";
 import { Link, Route, Switch, useLocation } from "wouter";
 function App() {
@@ -21,6 +22,10 @@ function App() {
         <div className="container-center-site">
           <Switch>
             <Route path="/falles360-Francesc" component={Home} />
+            <Route
+              path="/falles360-Francesc/blog"
+              component={Blog}
+            />
             <Route
               path="/falles360-Francesc/politica-privacidad"
               component={PoliticaPrivadad}
