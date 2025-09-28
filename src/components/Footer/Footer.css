@@ -22,8 +22,17 @@
 .icons {
   fill: var(--fourtColor);
 }
+
 .icons:hover {
   fill: var(--fourtColorHover);
+}
+.footer__link{
+  margin-left: 10%;
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+.footer__link:hover{
+  color: var(--primaryColorHover);
 }
 @media screen and (min-width: 768px) {
 }
@@ -47,6 +56,6 @@
     gap: 1rem;
   }
   .footer__social-network{
-    margin-left: 12.5%;
+    margin-left: 10%;
   }
 }

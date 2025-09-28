@@ -69,6 +69,7 @@ export const Footer = () => {
           </nav>
         </div>
       </div>
+      {/* Redes Sociales */}
       <div className="footer__social-network">
         <a href="https://www.facebook.com" target="_blank" title="Facebook">
           <svg
@@ -104,8 +105,8 @@ export const Footer = () => {
           </svg>
         </a>
       </div>
-      {/* Redes Sociales */}
       {/* Menu */}
+      <p><a className="footer__link" target="_blank" href="https://github.com/JgregoriDev">© JGregoriDev</a>. Todos los derechos reservados.</p>
     </footer>
   );
 };
