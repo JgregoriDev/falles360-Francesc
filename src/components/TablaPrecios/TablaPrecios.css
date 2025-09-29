@@ -17,7 +17,7 @@
   padding: 0;
   background-color: var(--fifthColor);
 }
-.conteiner__pricing-element {
+.container__pricing-element {
   color: var(--primaryColor);
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -26,9 +26,9 @@
   cursor: pointer;
 }
 
-.conteiner__pricing-element:hover {
+.container__pricing-element:hover {
   cursor: pointer;
-  background: var(--fifthColorHover); /* Cambia color al hacer hover */
+  background: var(--fifthColorHover);
   color: var(--primaryColorHover);
   color: var(--primaryColorHover);
   cursor: pointer;
@@ -40,7 +40,7 @@
 .container__princing-subtitle {
   font-size: large;
 }
-.conteiner__pricing-element--outline {
+.container__pricing-element--outline {
   background-color: none;
   text-align: center;
   margin-right: 1.5625rem;
@@ -53,11 +53,11 @@
   padding: 1rem;
   animation: 0.5s linear 1s infinite alternate slide-in;
 }
-.conteiner__pricing-element--outline:hover {
+.container__pricing-element--outline:hover {
   background-color: var(--primaryColor);
   color: white;
 }
-.conteiner__pricing-element--inline {
+.container__pricing-element--inline {
   background-color: var(--primaryColor);
   text-transform: uppercase;
   text-decoration: none;
@@ -70,11 +70,52 @@
   padding-bottom: 1rem;
   animation: 0.5s linear 1s infinite alternate slide-in;
 }
-.conteiner__pricing-element--inline:hover {
+.container__pricing-element--inline:hover {
   background-color: #c83250;
   color: #fff;
 }
+th[colspan="3"] {
+  display: table-cell;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  background-color: royalblue;
+  border-radius: 20px;
+  min-width: 200px;
+  text-transform: uppercase;
+}
+.btn-primary {
+  border: 1px solid var(--primaryColor);
+  background-color: var(--primaryColor);
+
+}
+.btn-primary:hover {
+  background-color: var(--primaryColorHover);
+  color: #fff;
+}
+
+.btn-secondary {
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
+  background-color: transparent;
+}
+.btn-secondary:hover {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+.col-3 {
+  display: none;
+}
 @media screen and (min-width: 768px) {
+  th[colspan="3"] {
+    display: none;
+  }
   .container__pricing {
     flex-direction: row;
   }
@@ -84,9 +125,12 @@
   .container__princing--premium {
     width: 50%;
   }
-  .conteiner__pricing-element--inline {
+  .container__pricing-element--inline {
     padding-right: 1.5625rem;
     padding-left: 1.5625rem;
+  }
+  .col-3 {
+    display: table-row;
   }
 }
 
@@ -94,159 +138,156 @@
 }
 
 .container__pricing {
-    display: flex;
-    flex-direction: column;
-    background: var(--fifthColor);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  background: var(--fifthColor);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .container__princing-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-    background-color: var(--fifthColor);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  background-color: var(--fifthColor);
 }
 
-.conteiner__pricing-element {
-    color: var(--primaryColor);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    transition: background 0.3s, color 0.3s;
-    cursor: pointer;
+.container__pricing-element {
+  color: var(--primaryColor);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
 }
 
-.conteiner__pricing-element:hover {
-    background: var(--fifthColorHover); /* Cambia color al hacer hover */
-    color: var(--primaryColorHover);
+.container__pricing-element:hover {
+  background: var(--fifthColorHover); /* Cambia color al hacer hover */
+  color: var(--primaryColorHover);
 }
 
 .container__princing-title {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .container__princing-subtitle {
-    font-size: large;
+  font-size: large;
 }
 
-.conteiner__pricing-element--outline {
-    border: 0.25rem solid var(--primaryColor);
-    color: var(--primaryColor);
-    font-weight: bold;
-    border-radius: 1.5625rem;
-    text-transform: uppercase;
-    padding: 1rem;
-    animation: 0.5s linear 1s infinite alternate slide-in;
+.container__pricing-element--outline {
+  border: 0.25rem solid var(--primaryColor);
+  color: var(--primaryColor);
+  font-weight: bold;
+  border-radius: 1.5625rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  animation: 0.5s linear 1s infinite alternate slide-in;
 }
 
-
-
-.conteiner__pricing-element--inline {
-    background-color: var(--primaryColor);
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    border: 0.25rem solid var(--primaryColor);
-    border-radius: 1.5625rem;
-    padding: 1rem;
-    animation: 0.5s linear 1s infinite alternate slide-in;
+.container__pricing-element--inline {
+  background-color: var(--primaryColor);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border: 0.25rem solid var(--primaryColor);
+  border-radius: 1.5625rem;
+  padding: 1rem;
+  animation: 0.5s linear 1s infinite alternate slide-in;
 }
 
-.conteiner__pricing-element--inline:hover {
-    background-color: #c83250;
-    color: #fff;
+.container__pricing-element--inline:hover {
+  background-color: #c83250;
+  color: #fff;
 }
 
-/* Media Queries para Responsividad */
 @media screen and (min-width: 768px) {
-    .container__pricing {
-        flex-direction: row;
-    }
-    .container__princing--free,
-    .container__princing--premium {
-        width: 50%; /* Cada sección ocupa la mitad del ancho */
-    }
-    .conteiner__pricing-element--inline {
-        padding-right: 1.5625rem;
-        padding-left: 1.5625rem;
-    }
+  .container__pricing {
+    flex-direction: row;
+  }
+  .container__princing--free,
+  .container__princing--premium {
+    width: 50%;
+  }
+  .container__pricing-element--inline {
+    padding-right: 1.5625rem;
+    padding-left: 1.5625rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    .container__princing-title {
-        font-size: 2.5rem; /* Aumentar el tamaño del título en pantallas grandes */
-    }
-    .container__princing-subtitle {
-        font-size: 1.5rem; /* Aumentar el tamaño del subtítulo en pantallas grandes */
-    }
+  .container__princing-title {
+    font-size: 2.5rem;
+  }
+  .container__princing-subtitle {
+    font-size: 1.5rem;
+  }
 }
 
 .pricing-table {
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 thead {
-    text-align: center;
-    background-color: #e74c3c;
+  text-align: center;
+  background-color: #e74c3c;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 th,
 td {
   cursor: pointer;
-    padding: 15px;
-    text-align: left;
+  padding: 15px;
+  text-align: left;
 }
 
 tr:nth-child(odd) {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 tr:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 tr.header-table {
-    background-color: var(--primaryColor);
-    font-size: 2rem;
+  background-color: var(--primaryColor);
+  font-size: 2rem;
 }
 
 td.td__principal {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 tfoot {
-    height: 100px;
+  height: 100px;
 }
 
-/* Media Queries para la tabla */
 @media screen and (max-width: 768px) {
-    th, td {
-        padding: 10px; /* Reducir el padding en pantallas pequeñas */
-        font-size: 1rem; /* Ajustar el tamaño de fuente */
-    }
+  th,
+  td {
+    padding: 10px;
+    font-size: 1rem;
+  }
 
-    .pricing-table {
-        padding: 15px; /* Reducir el padding de la tabla */
-    }
+  .pricing-table {
+    padding: 15px;
+  }
 
-    .container__princing-title {
-        font-size: 1.5rem; /* Ajustar el tamaño del título */
-    }
+  .container__princing-title {
+    font-size: 1.5rem;
+  }
 }
