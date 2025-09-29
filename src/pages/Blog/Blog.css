@@ -11,6 +11,10 @@
   margin-bottom: 20px;
   text-align: center;
 }
+.blog__post--link{
+  text-decoration: none;
+  color: rgb(0, 0, 0,.9);
+}
 .blog__post {
   background-color: #f9f9f9;
   border-radius: 8px;
@@ -86,6 +90,9 @@
 .page-item--active {
   color: var(--secondColor);
   border-color: var(--secondColor);
+}
+.page-item.page-item--active:hover {
+  color: #f9f9f9;
 }
 .page-item:hover {
   background-color: var(--secondColor);

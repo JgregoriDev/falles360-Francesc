@@ -9,8 +9,8 @@
   border: none;
   cursor: pointer;
   border-radius: 50%;
-  bottom: 0.625rem;
-  right: 0.625rem;
+  bottom: 35px;
+  right: 35px;
 }
 .btn--scroll:hover {
   background-color: var(--primaryColorHover);
