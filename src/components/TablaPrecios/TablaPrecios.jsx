@@ -75,14 +75,27 @@ export const TablaPrecios = () => {
           </tr>
         </tbody>
         <tfoot>
-          <tr className="pt-2 pb-2">
+          <tr>
+            <th colspan="3"></th>
+          </tr>
+          <tr>
+            <th colspan="3">
+                <a href="#" className="btn btn-secondary">¡Únete gratis!</a>
+            </th>
+          </tr>
+          <tr>
+            <th colspan="3">  <a href="#" className="btn btn-primary ">
+                ¡Suscríbete ahora!
+              </a></th>
+          </tr>
+          <tr className="col-3 pt-2 pb-2" >
             {/* Todo: Resposive buttons */}
             <th></th>
-            <th className="">
-              <a href="#" className="conteiner__pricing-element--outline text__notunderline">¡Únete gratis!</a>
+            <th className="" >
+              <a href="#" className="container__pricing-element--outline text__notunderline">¡Únete gratis!</a>
             </th>
             <th>
-              <a href="#" className="conteiner__pricing-element--inline paid-button">
+              <a href="#" className="container__pricing-element--inline">
                 ¡Suscríbete ahora!
               </a>
             </th>

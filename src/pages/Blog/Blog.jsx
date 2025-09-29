@@ -1,6 +1,7 @@
 import { useEffect,useState } from "react";
 import "./Blog.css";
 import setTitle from "@/utils/setTitle";
+import getDataNews from "@/utils/getDataNews";
 import Categories from "@/store/MockCategories.json";
 import News from "@/store/MockNews.json";
 const Blog = () => {
@@ -8,6 +9,8 @@ const Blog = () => {
   const [currentPage, setcurrentPage] = useState(1);
   useEffect(() => {
     setTitle({ title: "Blog" });
+    // console.log(getDataNews());
+    
   }, []);
   return (
     <section className="blog">
@@ -17,7 +20,7 @@ const Blog = () => {
           {/* News Feed */}
           {News.news.map((post) => (
             <article className="blog__post--item" key={post.id}>
-              <a href={`/falles360-Francesc/blog/noticia/${post.titulo.split(" ").join("-")}`}>
+              <a className="blog__post--link" href={`/falles360-Francesc/blog/noticia/${post.titulo.split(" ").join("-")}`}>
                 <h3 className="blog__post--title">{post.titulo}</h3>
               </a>
               <a href={`/falles360-Francesc/blog/noticia/${post.titulo.split(" ").join("-")}`}>
