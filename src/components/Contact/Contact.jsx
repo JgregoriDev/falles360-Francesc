@@ -23,18 +23,68 @@ export const Contact = () => {
     setSuccesfull(false);
   }, []);
   const handleChange = (e) => {
-    const { name, type, checked, value } = e.target;
+    const { name, value } = e.target;
+    if (name === "rgpd") {
+      setFormData({ ...formData, [name]: e.target.checked });
+      if (e.target.checked) {
+        const { rgpd: _, ...rest } = errors; // Eliminar el error de rgpd si se marca
+        setErrors(rest);
+      } else {
+        setErrors({ ...errors, rgpd: "Debes aceptar la política de RGPD." });
+      }
+      return;
+    }
+    if (name === "email") {
+      setFormData({ ...formData, [name]: value });
+      const isValid = validateEmail(value);
+      if (!isValid) {
+        setErrors({
+          ...errors,
+          email: "El correo electrónico no cumple el formato requerido.",
+        });
+      } else {
+        const { email: _, ...rest } = errors; // Eliminar el error del email si es válido
+        setErrors(rest);
+      }
+      return;
+    }
+    setFormData({ ...formData, [name]: value });
 
-    setFormData({
-      ...formData,
-      [name]: type === "checkbox" ? checked : value,
-    });
+    const error = validateEmail(value);
+    if (error) {
+      setErrors({ ...errors, email: error });
+    } else {
+      const { name: _, ...rest } = errors; // Eliminar el error del nombre si no hay
+      setErrors(rest);
+    }
+    if (name === "name") {
+      const error = validateName(value);
+      if (error) {
+        setErrors({ ...errors, name: error });
+      } else {
+        const { name: _, ...rest } = errors; // Eliminar el error del nombre si no hay
+        setErrors(rest);
+      }
+    }
   };
   const validateEmail = (email) => {
     if (!email) return false;
     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return regex.test(email);
   };
+  const validateName = (name) => {
+    if (!name) {
+      return "El nombre es obligatorio.";
+    }
+    if (name.length < 2) {
+      return "El nombre debe tener al menos 2 caracteres.";
+    }
+    if (!/^[a-zA-Z\s]+$/.test(name)) {
+      return "El nombre solo puede contener letras y espacios.";
+    }
+    return null;
+  };
+
   const validate = () => {
     const newErrors = {};
     const { name, email, rgpd, subject } = formData;
@@ -103,11 +153,15 @@ export const Contact = () => {
           value={formData.email}
           onChange={handleChange}
         />
-        {errors?.email && <small className="form__errors">{errors?.email}</small>}
+        {errors?.email && (
+          <small className="form__errors">{errors?.email}</small>
+        )}
 
         <label htmlFor="subject">Asunto:</label>
         <textarea
-          className={`form__field form__textarea ${errors?.subject ? "form__field--error" : ""}`}
+          className={`form__field form__textarea ${
+            errors?.subject ? "form__field--error" : ""
+          }`}
           placeholder="Tu consulta"
           name="subject"
           id="subject"
@@ -123,14 +177,18 @@ export const Contact = () => {
             type="checkbox"
             name="rgpd"
             id="rgpd"
-            className={`form__checkbox ${errors?.rgpd ? "form__checkbox--error" : ""}`}
+            className={`form__checkbox ${
+              errors?.rgpd ? "form__checkbox--error" : ""
+            }`}
             checked={formData.rgpd}
             onChange={handleChange}
           />
-          <label htmlFor="rgpd">He leído{" "}
-          <a target="_blank" href="/falles360-Francesc/politica-privacidad">
-            la política de privacidad
-          </a></label>
+          <label htmlFor="rgpd">
+            He leído{" "}
+            <a target="_blank" href="/falles360-Francesc/politica-privacidad">
+              la política de privacidad
+            </a>
+          </label>
         </p>
         {errors?.rgpd && <small className="form__errors">{errors?.rgpd}</small>}
 
