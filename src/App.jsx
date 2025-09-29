@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Header, Footer, Hero } from "@/components";
 import { Home } from "@/pages/Home/Home.jsx";
 import  Blog  from "@/pages/Blog/Blog.jsx";
+import  E404  from "@/pages/E404/E404.jsx";
 import { PoliticaPrivadad } from "@/pages/PoliticaPrivadad/PoliticaPrivadad";
 import { Link, Route, Switch, useLocation } from "wouter";
 function App() {
@@ -30,7 +31,7 @@ function App() {
               path="/falles360-Francesc/politica-privacidad"
               component={PoliticaPrivadad}
             />
-            <Route style={{ gridColumn: "1 / -1" }}>404: Página no encontrada!</Route>
+            <Route style={{ gridColumn: "1 / -1" }} component={E404} />
           </Switch>
         </div>
       </div>

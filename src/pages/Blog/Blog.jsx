@@ -12,6 +12,7 @@ const Blog = () => {
     // console.log(getDataNews());
     
   }, []);
+  const linkPost = ({post}) => `/falles360-Francesc/blog/noticia/${post.titulo.toLowerCase().split(" ").join("-")}`;
   return (
     <section className="blog">
       <div className="blog__feed">
@@ -20,10 +21,10 @@ const Blog = () => {
           {/* News Feed */}
           {News.news.map((post) => (
             <article className="blog__post--item" key={post.id}>
-              <a className="blog__post--link" href={`/falles360-Francesc/blog/noticia/${post.titulo.split(" ").join("-")}`}>
+              <a title={post.titulo} className="blog__post--link" href={linkPost({post})}>
                 <h3 className="blog__post--title">{post.titulo}</h3>
               </a>
-              <a href={`/falles360-Francesc/blog/noticia/${post.titulo.split(" ").join("-")}`}>
+              <a title={post.titulo} href={linkPost({post})}>
                 <img
                   className="blog__post--image"
                   src={post.imagen}
@@ -36,8 +37,9 @@ const Blog = () => {
               </p>
               <p className="blog__post--content">{post.contenido}</p>
               <a
+              title="Leer más"
                 className="blog__post--link"
-                href={`/falles360-Francesc/blog/noticia/${post.titulo.split(" ").join("-")}`}
+                href={linkPost({post})}
               >
                 Leer más...
               </a>
