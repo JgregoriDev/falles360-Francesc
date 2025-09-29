@@ -74,15 +74,58 @@
 .pb-1 {
   padding-bottom: 1rem;
 }
-.pb-2 { 
+.pb-2 {
   padding-bottom: 2rem;
-} 
+}
 .pb-3 {
   padding-bottom: 3rem;
-} 
+}
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
 
+.text--bolder {
+  display: block;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.span {
+  transition: --num .5s;
+  counter-reset: num var(--num);
+}
+
+.span::before {
+  content: counter(num);
+}
+.span::after{
+  content: "+";
+}
+span:is(.ger)::after {
+  content: ""; /* Esto anula el contenido del ::after */
+}
+.hero__container--stats {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  gap: 2.5rem;
+}
 
 @media screen and (min-width: 768px) {
+  .hero__container--stats {
+    gap: 5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+  .text--bolder {
+    font-weight: bolder;
+    font-size: 3rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
