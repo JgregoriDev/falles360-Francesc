@@ -9,7 +9,7 @@ export const TablaPrecios = () => {
           <tr className="header-table">
             <th className="theader">Características</th>
             <th className="theader">Usuario Gratuito</th>
-            <th className="theader">Usuario de Pago (20€)</th>
+            <th className="theader">Usuario de Premium gratis</th>
           </tr>
         </thead>
         <tbody>
@@ -85,7 +85,7 @@ export const TablaPrecios = () => {
           </tr>
           <tr>
             <th colSpan="3">  <a href="#" className="btn btn-primary ">
-                ¡Suscríbete ahora!
+                ¡Suscríbete ahora gratis!
               </a></th>
           </tr>
           <tr className="col-3 pt-2 pb-2" >
