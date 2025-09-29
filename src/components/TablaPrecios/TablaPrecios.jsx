@@ -76,15 +76,15 @@ export const TablaPrecios = () => {
         </tbody>
         <tfoot>
           <tr>
-            <th colspan="3"></th>
+            <th colSpan="3"></th>
           </tr>
           <tr>
-            <th colspan="3">
+            <th colSpan="3">
                 <a href="#" className="btn btn-secondary">¡Únete gratis!</a>
             </th>
           </tr>
           <tr>
-            <th colspan="3">  <a href="#" className="btn btn-primary ">
+            <th colSpan="3">  <a href="#" className="btn btn-primary ">
                 ¡Suscríbete ahora!
               </a></th>
           </tr>
