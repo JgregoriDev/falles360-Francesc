@@ -40,11 +40,11 @@ export const Coins = () => {
           loading="lazy"
         />
         <small className="Coins__small Coins__small--pc">
-          Únete a nuestra comunidad de más de 2000 usuarios
+          Únete a nuestra comunidad de más de 7500 usuarios
         </small>
       </div>
         <small className="Coins__small Coins__small--smartphone">
-          Únete a nuestra comunidad de más de 2000 usuarios
+          Únete a nuestra comunidad de más de 7500 usuarios
         </small>
     </div>
   );
