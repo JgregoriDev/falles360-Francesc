@@ -73,14 +73,14 @@ export const Contact = () => {
     return regex.test(email);
   };
   const validateName = (name) => {
-    if (!name) {
-      return "El nombre es obligatorio.";
-    }
     if (name.length < 2) {
       return "El nombre debe tener al menos 2 caracteres.";
     }
     if (!/^[a-zA-Z\s]+$/.test(name)) {
       return "El nombre solo puede contener letras y espacios.";
+    }
+    if (!name) {
+      return "El nombre es obligatorio.";
     }
     return null;
   };
@@ -88,13 +88,13 @@ export const Contact = () => {
   const validate = () => {
     const newErrors = {};
     const { name, email, rgpd, subject } = formData;
+
+    if (name.length < 2) {
+      newErrors.name = "El nombre requiere como mínimo 3 caracteres.";
+    }
     if (!name) {
       newErrors.name = "El nombre es requerido.";
     }
-    if (name.length < 3) {
-      newErrors.name = "El nombre requiere como mínimo 3 caracteres.";
-    }
-
     if (!email) {
       newErrors.email = "El correo electrónico es requerido.";
     }
