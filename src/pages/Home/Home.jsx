@@ -6,6 +6,7 @@ import {
   FAQList,
   Contact,
   SliderUser,
+  Differences,
   Grid,
   Beneficios,
   Sponsors,
@@ -23,7 +24,7 @@ export const Home = () => {
       ) {
         setIsVisible(true);
       } else {
-        setIsVisible(false);
+      setIsVisible(false);
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -40,6 +41,7 @@ export const Home = () => {
       <Grid />
       <Beneficios />
       <Rail />
+      <Differences />
       <TablaPrecios />
       <Sponsors />
       <FAQList />
