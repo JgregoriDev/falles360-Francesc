@@ -2,10 +2,10 @@
   "news": [
     {
       "id": 1,
-      "titulo": "Calendario de Eventos para las Fallas 2025",
-      "fecha": "2025-03-01",
-      "imagen": "https://picsum.photos/500/500",
-      "contenido": "Este año, las Fallas de Valencia prometen una serie de eventos emocionantes, desde la plantà hasta la cremà.",
+      "title": "Calendario de Eventos para las Fallas 2025",
+      "date": "2025-03-01",
+      "image": "https://picsum.photos/500/500",
+      "content": "Este año, las Fallas de Valencia prometen una serie de eventos emocionantes, desde la plantà hasta la cremà.",
       "categoria": {
         "id": 1,
         "name": "Eventos",
@@ -16,10 +16,10 @@
     },
     {
       "id": 2,
-      "titulo": "Resultados del Concurso de Fallas 2025",
-      "fecha": "2025-03-02",
-      "imagen": "https://picsum.photos/500/500",
-      "contenido": "Los ganadores del concurso de fallas han sido anunciados, destacando la creatividad y el ingenio de los artistas.",
+      "title": "Resultados del Concurso de Fallas 2025",
+      "date": "2025-03-02",
+      "image": "https://picsum.photos/500/500",
+      "content": "Los ganadores del concurso de fallas han sido anunciados, destacando la creatividad y el ingenio de los artistas.",
       "categoria": {
         "id": 2,
         "name": "Concursos",
@@ -29,10 +29,10 @@
     },
     {
       "id": 3,
-      "titulo": "Las Tradiciones de las Fallas: Un Vínculo Cultural",
-      "fecha": "2025-03-03",
-      "imagen": "https://picsum.photos/500/500",
-      "contenido": "Exploramos las tradiciones que hacen de las Fallas una celebración única en el mundo.",
+      "title": "Las Tradiciones de las Fallas: Un Vínculo Cultural",
+      "date": "2025-03-03",
+      "image": "https://picsum.photos/500/500",
+      "content": "Exploramos las tradiciones que hacen de las Fallas una celebración única en el mundo.",
       "categoria": {
         "id": 3,
         "name": "Tradiciones",
@@ -42,10 +42,10 @@
     },
     {
       "id": 4,
-      "titulo": "Historia de las Fallas: De la Antigüedad a Hoy",
-      "fecha": "2025-03-04",
-      "imagen": "https://picsum.photos/500/500",
-      "contenido": "Un vistazo a la rica historia de las Fallas y su evolución a lo largo de los años.",
+      "title": "Historia de las Fallas: De la Antigüedad a Hoy",
+      "date": "2025-03-04",
+      "image": "https://picsum.photos/500/500",
+      "content": "Un vistazo a la rica historia de las Fallas y su evolución a lo largo de los años.",
       "categoria": {
         "id": 4,
         "name": "Historia",
@@ -55,10 +55,10 @@
     },
     {
       "id": 5,
-      "titulo": "Conociendo a los Artistas Falleros",
-      "fecha": "2025-03-05",
-      "imagen": "https://picsum.photos/500/500",
-      "contenido": "Entrevistas con algunos de los artistas falleros más destacados y sus obras maestras.",
+      "title": "Conociendo a los Artistas Falleros",
+      "date": "2025-03-05",
+      "image": "https://picsum.photos/500/500",
+      "content": "Entrevistas con algunos de los artistas falleros más destacados y sus obras maestras.",
       "categoria": {
         "id": 5,
         "name": "Artistas",
@@ -68,10 +68,10 @@
     },
     {
       "id": 6,
-      "titulo": "Gastronomía en las Fallas: Platos Imperdibles",
-      "fecha": "2025-03-06",
-      "imagen": "https://picsum.photos/500/500",
-      "contenido": "Descubre los platos típicos que no te puedes perder durante las Fallas de Valencia.",
+      "title": "Gastronomía en las Fallas: Platos Imperdibles",
+      "date": "2025-03-06",
+      "image": "https://picsum.photos/500/500",
+      "content": "Descubre los platos típicos que no te puedes perder durante las Fallas de Valencia.",
       "categoria": {
         "id": 6,
         "name": "Gastronomía",

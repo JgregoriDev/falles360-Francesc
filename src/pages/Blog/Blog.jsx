@@ -12,7 +12,7 @@ const Blog = () => {
     // console.log(getDataNews());
     
   }, []);
-  const linkPost = ({post}) => `/falles360-Francesc/blog/noticia/${post.titulo.toLowerCase().split(" ").join("-")}`;
+  const linkPost = ({post}) => `/falles360-Francesc/blog/noticia/${post.title.toLowerCase().split(" ").join("-")}`;
   return (
     <section className="blog">
       <div className="blog__feed">
@@ -21,21 +21,21 @@ const Blog = () => {
           {/* News Feed */}
           {News.news.map((post) => (
             <article className="blog__post--item" key={post.id}>
-              <a title={post.titulo} className="blog__post--link" href={linkPost({post})}>
-                <h3 className="blog__post--title">{post.titulo}</h3>
+              <a title={post.title} className="blog__post--link" href={linkPost({post})}>
+                <h3 className="blog__post--title">{post.title}</h3>
               </a>
-              <a title={post.titulo} href={linkPost({post})}>
+              <a title={post.title} href={linkPost({post})}>
                 <img
                   className="blog__post--image"
-                  src={post.imagen}
+                  src={post.image}
                   loading="lazy"
                   alt={post.titulo}
                 />
               </a>
               <p className="blog__post--date">
-                {new Date(post.fecha).toLocaleDateString()}
+                {new Date(post.date).toLocaleDateString()}
               </p>
-              <p className="blog__post--content">{post.contenido}</p>
+              <p className="blog__post--content">{post.content}</p>
               <a
               title="Leer más"
                 className="blog__post--link"
