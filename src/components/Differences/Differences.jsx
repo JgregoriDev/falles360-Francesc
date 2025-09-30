@@ -16,22 +16,40 @@ export const Differences = () => {
             <h3>Sin app falles 360</h3>
           </li>
           <li className="differences__item differences__item--without">
-            Acceso inmediato a la información de eventos.
+            Te enteras de los eventos con retraso..
           </li>
           <li className="differences__item differences__item--without">
-            Participación activa en la celebración.
+            Buscas información en múltiples fuentes.
           </li>
           <li className="differences__item differences__item--without">
-            Experiencias únicas y memorables.
+            Te pierdes experiencias inolvidables.
           </li>
           <li className="differences__item differences__item--without">
-            Conexión con otros falleros.
+            Te sientes aislado.
           </li>
           <li className="differences__item differences__item--without">
-            Gestión sencilla de tickets digitales.
+            Solo observas desde la distancia.
           </li>
           <li className="differences__item differences__item--without">
-            Notificaciones personalizadas sobre eventos.
+            Anuncios que pasan desapercibidos.
+          </li>
+          <li className="differences__item differences__item--without">
+            Mensajes de WhatsApp sin fin.
+          </li>
+          <li className="differences__item differences__item--without">
+            Entradas que se extravían.
+          </li>
+          <li className="differences__item differences__item--without">
+            Entradas fraudulentas.{" "}
+          </li>
+          <li className="differences__item differences__item--without">
+            Largas filas en la barra.{" "}
+          </li>
+          <li className="differences__item differences__item--without">
+            Inscripciones fuera de tiempo.{" "}
+          </li>
+          <li className="differences__item differences__item--without">
+            Esperas eternas para realizar pagos en persona.{" "}
           </li>
         </ul>
         <ul className="differences__ul differences__ul--secondary--color">
@@ -39,19 +57,37 @@ export const Differences = () => {
             <h3>Con app falles 360</h3>
           </li>
           <li className="differences__item differences__item--with">
-            Eliminación de colas y esperas innecesarias.
+            Todo disponible en un solo sitio.
           </li>
           <li className="differences__item differences__item--with">
-            Inscripciones automáticas y rápidas.
+            Disfrutas cada momento al máximo.{" "}
           </li>
           <li className="differences__item differences__item--with">
-            Contenido exclusivo para miembros de Falles.
+            Eres el protagonista de la historia.{" "}
           </li>
           <li className="differences__item differences__item--with">
-            Estadísticas en tiempo real sobre la participación.
+            Orgullo de pertenencia a la comunidad fallera.
           </li>
           <li className="differences__item differences__item--with">
-            Facilidad para compartir eventos con amigos.
+            Difusión con un solo clic.{" "}
+          </li>
+          <li className="differences__item differences__item--with">
+            Entradas digitales en tu dispositivo móvil.
+          </li>
+          <li className="differences__item differences__item--with">
+            Barra sin necesidad de tokens.
+          </li>
+          <li className="differences__item differences__item--with">
+            Adiós a las falsificaciones.
+          </li>
+          <li className="differences__item differences__item--with">
+            Inscripciones automáticas y sencillas.
+          </li>
+          <li className="differences__item differences__item--with">
+            Estadísticas en tiempo real.
+          </li>
+          <li className="differences__item differences__item--with">
+            Registro centralizado en un solo lugar.
           </li>
           <li className="differences__item differences__item--with">
             Orgullo de pertenencia a la comunidad fallera.

@@ -18,27 +18,49 @@
 .differences__ul {
   list-style: none;
   gap: 1rem;
-
+  width: 80%;
+  border-radius: 20px;
   font-size: 1.05rem;
 }
 
+/** Start First list**/
 .differences__ul--primary--color :first-child {
   list-style: none;
 }
 .differences__ul--primary--color {
   /* list-style-type: disc; */
+  border-right: 5px solid var(--primaryColor);
+  border-bottom: 5px solid var(--primaryColor);
   list-style-image: url("@/assets/x.svg");
+  transition: transform .3s ease;
+  transition: border .75s ease;
+  
 }
+.differences__ul--primary--color:hover {
+  transform: translateY(-5px);
+  border-bottom: 7.5px solid var(--primaryColor);
+  border-right: 7.5px solid var(--primaryColor);
+}
+/* End 1st list styles */
 .differences__item .differences__item--title {
 }
-.differences__ul--primary--color :hover {
-}
+/*Start Second list styles*/
 .differences__ul--secondary--color {
   list-style-image: url("@/assets/check.svg");
+  border-right: 5px solid var(--thirdColor);
+  border-bottom: 5px solid var(--thirdColor);
+  transition: transform .3s ease;
+  transition: border .75s ease;
 }
-.differences__ul--secondary--color :first-child {
+.differences__ul--secondary--color:hover{
+  transform: translateY(-5px);
+  border-bottom: 7.5px solid var(--thirdColor);
+  border-right: 7.5px solid var(--thirdColor);
+}
+.differences__ul--secondary--color:first-child {
   list-style-image: none;
 }
+/*End Second list styles*/
 .differences__item {
   padding: 10px;
   margin-top: 10px 20px;
@@ -55,11 +77,13 @@
   .differences__ul {
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 20px;
     font-size: 1.25rem;
+    width: auto;
   }
+
   .differences__container {
     justify-content: space-around;
     flex-direction: row;
   }
+
 }
