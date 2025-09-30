@@ -87,7 +87,7 @@ th[colspan="3"] {
   padding: 10px 20px;
   background-color: royalblue;
   border-radius: 20px;
-  min-width: 200px;
+  min-width: 290px;
   text-transform: uppercase;
 }
 .btn-primary {
@@ -221,6 +221,9 @@ th[colspan="3"] {
 }
 
 @media screen and (min-width: 992px) {
+  .btn{
+    min-width: auto;
+  }
   .container__princing-title {
     font-size: 2.5rem;
   }
