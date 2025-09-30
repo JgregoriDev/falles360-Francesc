@@ -6,6 +6,7 @@ import {
   FAQList,
   Contact,
   SliderUser,
+  Updates,
   Differences,
   Grid,
   Beneficios,
@@ -42,6 +43,7 @@ export const Home = () => {
       <Beneficios />
       <Rail />
       <Differences />
+      <Updates/>
       <TablaPrecios />
       <Sponsors />
       <FAQList />

@@ -12,6 +12,9 @@
   bottom: 35px;
   right: 35px;
 }
+
+
+
 .btn--scroll:hover {
   background-color: var(--primaryColorHover);
   fill: rgba(255, 255, 255, 0.8);

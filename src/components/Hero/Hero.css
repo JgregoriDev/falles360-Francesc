@@ -43,6 +43,23 @@
     margin-right: 0.5em;
   fill: white;
 }
+.icon__button--red{
+  fill: var(--primaryColor);
+}
+.icon__button--red:hover{
+  fill: white !important;
+
+}
+.test{
+  display: flex;
+  justify-content: space-around;
+  fill: var(--primaryColor);
+}
+
+.test:hover{
+  color: white;
+  fill: #f3f3f3 !important;
+}
 .Hero__text--gradient {
   font-size: 3.75rem;
   display: block;
