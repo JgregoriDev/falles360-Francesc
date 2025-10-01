@@ -192,7 +192,7 @@ export const Contact = () => {
         </p>
         {errors?.rgpd && <small className="form__errors">{errors?.rgpd}</small>}
 
-        <button className="button--outline" type="submit">
+        <button className="button button--outline" type="submit">
           Envíanos tu consulta
         </button>
         {succesfull && (
