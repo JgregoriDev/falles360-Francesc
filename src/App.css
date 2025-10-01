@@ -29,20 +29,21 @@
   cursor: pointer;
   display: flex;
   justify-content: space-around;
-  justify-content: center;
+  align-items: center;
   text-decoration: none;
   font-weight: bold;
   border-radius: 1.5625rem;
+  padding: 1rem;
+  min-width: 250px;
+  text-transform: uppercase;
+  max-width: 270px;
 }
 .button--outline {
   background-color: none;
   border: 0.25rem solid var(--primaryColor);
   color: var(--primaryColor);
   background-color: transparent;
-  font-weight: bold;
-  border-radius: 1.5625rem;
   text-transform: uppercase;
-  padding: 1rem;
   animation: 0.5s linear 1s infinite alternate slide-in;
   min-width: 50%;
   max-width: 90%;
@@ -50,6 +51,15 @@
 .button--outline:hover {
   background-color: var(--primaryColor);
   color: white;
+}
+.button-secondary {
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
+  background-color: transparent;
+}
+.button-secondary:hover {
+  background-color: var(--primaryColor);
+  color: #fff;
 }
 .mb-1 {
   margin-bottom: 1rem;

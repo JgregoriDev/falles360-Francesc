@@ -192,7 +192,10 @@ export const Contact = () => {
         </p>
         {errors?.rgpd && <small className="form__errors">{errors?.rgpd}</small>}
 
-        <button className="button button--outline" type="submit">
+        <button className="button button--outline w-resposive-form" type="submit">
+          <svg className="icon__button--red " height={50} width={50}  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+          <path d="M576 304C576 436.5 461.4 544 320 544C282.9 544 247.7 536.6 215.9 523.3L97.5 574.1C88.1 578.1 77.3 575.8 70.4 568.3C63.5 560.8 62 549.8 66.8 540.8L115.6 448.6C83.2 408.3 64 358.3 64 304C64 171.5 178.6 64 320 64C461.4 64 576 171.5 576 304z"/></svg>
+          
           Envíanos tu consulta
         </button>
         {succesfull && (

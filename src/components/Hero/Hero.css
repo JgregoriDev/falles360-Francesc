@@ -20,14 +20,8 @@
   justify-content: center;
   align-items: center;
 }
-.text__notunderline {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+.w-resposive-form {
   width: 90%;
-  
 }
 .Hero__container--buttons {
   display: flex;
@@ -46,7 +40,7 @@
 .icon__button--red{
   fill: var(--primaryColor);
 }
-.icon__button--red:hover{
+.button:hover .icon__button--red{
   fill: white !important;
 
 }
@@ -96,7 +90,5 @@
     align-items: center;
     justify-content: center;
   }
-  .text__notunderline{
-    width: 175px;
-  }
+
 }

@@ -81,11 +81,11 @@ export const TablaPrecios = () => {
           </tr>
           <tr>
             <th colSpan="3">
-                <a href="#" className="btn btn-secondary">¡Únete gratis!</a>
+                <a href="#" className="button container__pricing-element--outline ">¡Únete gratis!</a>
             </th>
           </tr>
           <tr>
-            <th colSpan="3">  <a href="#" className="button btn btn-primary ">
+            <th colSpan="3">  <a href="#" className="button button-primary">
                 ¡Suscríbete ahora gratis!
               </a></th>
           </tr>
@@ -93,7 +93,7 @@ export const TablaPrecios = () => {
             {/* Todo: Resposive buttons */}
             <th></th>
             <th className="" >
-              <a href="#" className="button container__pricing-element--outline text__notunderline">¡Únete gratis!</a>
+              <a href="#" className="button container__pricing-element--outline">¡Únete gratis!</a>
             </th>
             <th>
               <a href="#" className="button button-primary">
