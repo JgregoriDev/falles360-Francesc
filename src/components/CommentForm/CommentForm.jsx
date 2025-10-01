@@ -1,6 +1,7 @@
 import React from "react";
 import Tooltip from "@components/Tooltip/Tooltip.jsx";
-
+import "./CommentForm.css";
+import avatar from '@/assets/avatar.png';
 const CommentForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -8,11 +9,15 @@ const CommentForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="message">Introduce tu comentario:</label>
-      <Tooltip tooltipText={"Introduce tu comentario"} />
-      <textarea name="message" id="message" required></textarea>
-      <button type="submit" className="button button-primary">
+    <form className="form" onSubmit={handleSubmit}>
+      <label className="mb-1" htmlFor="message">Introduce tu comentario:   <Tooltip tooltipText={"Introduce tu comentario"} /></label>
+      <img src="" alt="" />
+      <div className="form__container">
+        <img src={avatar} title="avatar User 1" alt="" className="form__user--avatar" />
+        <textarea className="form__textArea" name="message" id="message" required></textarea>
+        </div>
+      
+      <button type="submit" className=" mb-2 mt-2 button button-primary">
         Enviar datos
       </button>
     </form>

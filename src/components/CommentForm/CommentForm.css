@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.form__user--avatar {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
+.form__textArea {
+  height: 100px;
+  width: 95%;
+  resize: vertical;
+  font-size: 16px; /* Tamaño de fuente */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: border-color 0.3s; /* Transición suave para el borde */
+}
