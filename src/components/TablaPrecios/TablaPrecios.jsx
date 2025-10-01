@@ -1,4 +1,5 @@
 import "./TablaPrecios.css";
+// import "./TablaPrecios.css";
 export const TablaPrecios = () => {
   return (
     <section id="tablasPrecios" className="">

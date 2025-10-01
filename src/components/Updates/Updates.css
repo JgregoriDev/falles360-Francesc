@@ -2,15 +2,16 @@
     position: relative;
     height: auto;
     width: 100%;
+    object-fit: cover;
 }
 .updates {
     position: relative;
-    height: 100vh; 
+    height: 65vh; 
     overflow: hidden;
 }
 
 .updates__p {
-font-size: 3.95rem;
+font-size: 2.55rem;
 
     display: none;
     position: absolute;
