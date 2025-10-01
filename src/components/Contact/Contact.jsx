@@ -1,7 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import ContactForm from "./ContactForm";
 import "./Contact.css";
-import { useEffect } from "react";
-import Tooltip from "../Tooltip/Tooltip";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,96 +13,36 @@ export const Contact = () => {
   const [succesfull, setSuccesfull] = useState(false);
 
   useEffect(() => {
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      rgpd: false,
-    });
+    resetForm();
+  }, []);
+
+  const resetForm = () => {
+    setFormData({ name: "", email: "", subject: "", rgpd: false });
     setErrors({});
     setSuccesfull(false);
-  }, []);
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    if (name === "rgpd") {
-      setFormData({ ...formData, [name]: e.target.checked });
-      if (e.target.checked) {
-        const { rgpd: _, ...rest } = errors; // Eliminar el error de rgpd si se marca
-        setErrors(rest);
-      } else {
-        setErrors({ ...errors, rgpd: "Debes aceptar la política de RGPD." });
-      }
-      return;
-    }
-    if (name === "email") {
-      setFormData({ ...formData, [name]: value });
-      const isValid = validateEmail(value);
-      if (!isValid) {
-        setErrors({
-          ...errors,
-          email: "El correo electrónico no cumple el formato requerido.",
-        });
-      } else {
-        const { email: _, ...rest } = errors; // Eliminar el error del email si es válido
-        setErrors(rest);
-      }
-      return;
-    }
-    setFormData({ ...formData, [name]: value });
+  };
 
-    const error = validateEmail(value);
-    if (error) {
-      setErrors({ ...errors, email: error });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const validationErrors = validateForm();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
     } else {
-      const { name: _, ...rest } = errors; // Eliminar el error del nombre si no hay
-      setErrors(rest);
+      // TODO: Petición POST
+      setErrors({});
+      setSuccesfull(true);
     }
-    if (name === "name") {
-      const error = validateName(value);
-      if (error) {
-        setErrors({ ...errors, name: error });
-      } else {
-        const { name: _, ...rest } = errors; // Eliminar el error del nombre si no hay
-        setErrors(rest);
-      }
-    }
-  };
-  const validateEmail = (email) => {
-    if (!email) return false;
-    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return regex.test(email);
-  };
-  const validateName = (name) => {
-    if (name.length < 2) {
-      return "El nombre debe tener al menos 2 caracteres.";
-    }
-    if (!/^[a-zA-Z\s]+$/.test(name)) {
-      return "El nombre solo puede contener letras y espacios.";
-    }
-    if (!name) {
-      return "El nombre es obligatorio.";
-    }
-    return null;
   };
 
-  const validate = () => {
+  const validateForm = () => {
     const newErrors = {};
     const { name, email, rgpd, subject } = formData;
 
-    if (name.length < 2) {
-      newErrors.name = "El nombre requiere como mínimo 3 caracteres.";
+    if (!name || name.length < 2) {
+      newErrors.name = "El nombre es requerido y debe tener al menos 2 caracteres.";
     }
-    if (!name) {
-      newErrors.name = "El nombre es requerido.";
-    }
-    if (!email) {
-      newErrors.email = "El correo electrónico es requerido.";
-    }
-    if (!validateEmail(email)) {
-      newErrors.email = "El correo electrónico no cumple el formato requerido.";
-    }
-    if (!email) {
-      newErrors.email = "El correo electrónico es requerido.";
+    if (!email || !validateEmail(email)) {
+      newErrors.email = "El correo electrónico es requerido y debe tener un formato válido.";
     }
     if (!subject) {
       newErrors.subject = "El asunto es requerido.";
@@ -114,97 +53,21 @@ export const Contact = () => {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSuccesfull(false);
-    const validationErrors = validate();
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-    } else {
-      // TODO: Peticion post
-
-      setErrors({});
-      setSuccesfull(!succesfull);
-    }
-  };
   return (
     <section className="contacto" id="contacto">
       <h2>Contacto</h2>
       <p>Tienes dudas o necesitas más información?</p>
-      <form className="contact__form" onSubmit={handleSubmit}>
-        <label htmlFor="name">Nombre: <Tooltip tooltipText={`Introduce un nombre por ejemplo: John Doe`} /></label>
-        <input
-          className={`form__field ${errors?.name ? "form__field--error" : ""}`}
-          placeholder="Tu nombre"
-          form__textareaype="text"
-          name="name"
-          id="name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-        {errors?.name && <small className="form__errors">{errors?.name}</small>}
-
-        <label htmlFor="email">Correo electrónico: <Tooltip tooltipText={`Introduce un e-mail por ejemplo: john.doe@ejemplo.org`} /></label>
-        <input
-          className={`form__field ${errors?.email ? "form__field--error" : ""}`}
-          placeholder="Tu correo electrónico"
-          type="text"
-          name="email"
-          id="email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-        {errors?.email && (
-          <small className="form__errors">{errors?.email}</small>
-        )}
-
-        <label htmlFor="subject">Asunto:</label>
-        <textarea
-          className={`form__field form__textarea ${
-            errors?.subject ? "form__field--error" : ""
-          }`}
-          placeholder="Tu consulta"
-          name="subject"
-          id="subject"
-          value={formData.subject}
-          onChange={handleChange}
-        />
-        {errors?.subject && (
-          <small className="form__errors">{errors?.subject}</small>
-        )}
-
-        <p>
-          <input
-            type="checkbox"
-            name="rgpd"
-            id="rgpd"
-            className={`form__checkbox ${
-              errors?.rgpd ? "form__checkbox--error" : ""
-            }`}
-            checked={formData.rgpd}
-            onChange={handleChange}
-          />
-          <label htmlFor="rgpd">
-            He leído{" "}
-            <a target="_blank" href="/falles360-Francesc/politica-privacidad">
-              la política de privacidad
-            </a>
-          </label>
-        </p>
-        {errors?.rgpd && <small className="form__errors">{errors?.rgpd}</small>}
-
-        <button className="button button--outline w-resposive-form" type="submit">
-          <svg className="icon__button--red " height={50} width={50}  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-          <path d="M576 304C576 436.5 461.4 544 320 544C282.9 544 247.7 536.6 215.9 523.3L97.5 574.1C88.1 578.1 77.3 575.8 70.4 568.3C63.5 560.8 62 549.8 66.8 540.8L115.6 448.6C83.2 408.3 64 358.3 64 304C64 171.5 178.6 64 320 64C461.4 64 576 171.5 576 304z"/></svg>
-          
-          Envíanos tu consulta
-        </button>
-        {succesfull && (
-          <small className="form__successfull mt-1 mb-1">
-            El mensaje ha sido enviado correctamente
-          </small>
-        )}
-      </form>
+      <ContactForm
+        formData={formData}
+        setFormData={setFormData}
+        errors={errors}
+        onSubmit={handleSubmit}
+      />
+      {succesfull && (
+        <small className="form__successfull mt-1 mb-1">
+          El mensaje ha sido enviado correctamente
+        </small>
+      )}
     </section>
   );
 };
