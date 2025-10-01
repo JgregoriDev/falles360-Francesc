@@ -21,7 +21,7 @@
   align-items: center;
 }
 .w-resposive-form {
-  width: 90%;
+  min-width: 90%;
 }
 .Hero__container--buttons {
   display: flex;
