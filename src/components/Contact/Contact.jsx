@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Contact.css";
 import { useEffect } from "react";
+import Tooltip from "../Tooltip/Tooltip";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -131,7 +132,7 @@ export const Contact = () => {
       <h2>Contacto</h2>
       <p>Tienes dudas o necesitas más información?</p>
       <form className="contact__form" onSubmit={handleSubmit}>
-        <label htmlFor="name">Nombre:</label>
+        <label htmlFor="name">Nombre: <Tooltip tooltipText={`Introduce un nombre por ejemplo: John Doe`} /></label>
         <input
           className={`form__field ${errors?.name ? "form__field--error" : ""}`}
           placeholder="Tu nombre"
@@ -143,7 +144,7 @@ export const Contact = () => {
         />
         {errors?.name && <small className="form__errors">{errors?.name}</small>}
 
-        <label htmlFor="email">Correo electrónico:</label>
+        <label htmlFor="email">Correo electrónico: <Tooltip tooltipText={`Introduce un e-mail por ejemplo: john.doe@ejemplo.org`} /></label>
         <input
           className={`form__field ${errors?.email ? "form__field--error" : ""}`}
           placeholder="Tu correo electrónico"
