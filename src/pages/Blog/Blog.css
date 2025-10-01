@@ -5,7 +5,13 @@
   gap: 20px;
   padding: 20px;
 }
-
+.page-link{
+  display: flex;
+}
+.page-icons{
+  height: 35px;
+  width: 35px;
+}
 .blog__title {
   font-size: 2.5em;
   margin-bottom: 20px;
@@ -57,7 +63,8 @@
 .blog__post{}
 .blog__post--image{
   width: 70%;
-  min-height: 70%;
+  min-height: 854px;
+  min-width: 854px;
   height: 50%;
   height: auto;
   margin-left: 10px;
