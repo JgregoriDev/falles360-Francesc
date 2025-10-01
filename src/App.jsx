@@ -6,6 +6,7 @@ import  Blog  from "@/pages/Blog/Blog.jsx";
 import  E404  from "@/pages/E404/E404.jsx";
 import { PoliticaPrivadad } from "@/pages/PoliticaPrivadad/PoliticaPrivadad";
 import { Link, Route, Switch, useLocation } from "wouter";
+import Article from "@/pages/Article/Article";
 function App() {
     const [location, navigate] = useLocation();
     useEffect(() => {
@@ -20,7 +21,7 @@ function App() {
       {/* 80% width */}
       <div className="container">
         <div className="container__left-site">&nbsp;</div>
-        <div className="container-center-site">
+        <main className="container-center-site">
           <Switch>
             <Route path="/falles360-Francesc" component={Home} />
             <Route
@@ -28,12 +29,16 @@ function App() {
               component={Blog}
             />
             <Route
+              path="/falles360-Francesc/blog/noticia/:id"
+              component={Article}
+            />
+            <Route
               path="/falles360-Francesc/politica-privacidad"
               component={PoliticaPrivadad}
             />
             <Route style={{ gridColumn: "1 / -1" }} component={E404} />
           </Switch>
-        </div>
+        </main>
       </div>
       {/* 100% width */}
       <Footer />

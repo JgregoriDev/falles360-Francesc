@@ -11,7 +11,7 @@ import {
   Grid,
   Beneficios,
   Sponsors,
-} from "@/components";
+} from "@components";
 import setTitle from '@/utils/setTitle';
 import "./Home.css";
 export const Home = () => {

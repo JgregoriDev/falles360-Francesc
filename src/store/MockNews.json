@@ -6,13 +6,23 @@
       "date": "2025-03-01",
       "image": "https://picsum.photos/500/500",
       "content": "Este año, las Fallas de Valencia prometen una serie de eventos emocionantes, desde la plantà hasta la cremà.",
+      "article": "Este año, las Fallas de Valencia prometen una serie de eventos emocionantes, desde la plantà hasta la cremà. Las festividades comenzarán con la tradicional plantación de las fallas, donde los artistas mostrarán su creatividad y dedicación. A lo largo de marzo, los visitantes podrán disfrutar de desfiles, música en vivo y actividades culturales que celebran la rica herencia de esta festividad. La culminación será la espectacular cremà, donde las fallas arderán en una noche mágica, simbolizando el renacer de la primavera.",
       "categoria": {
         "id": 1,
         "name": "Eventos",
         "description": "Actividades y celebraciones programadas durante las Fallas.",
         "filter": "eventos"
-      }
-
+      },
+      "comments": [
+        {
+          "author": "Usuario1",
+          "text": "Me encanta el ambiente de las Fallas, ¡no puedo esperar!"
+        },
+        {
+          "author": "Usuario2",
+          "text": "Las actividades son siempre muy emocionantes."
+        }
+      ]
     },
     {
       "id": 2,
@@ -20,12 +30,19 @@
       "date": "2025-03-02",
       "image": "https://picsum.photos/500/500",
       "content": "Los ganadores del concurso de fallas han sido anunciados, destacando la creatividad y el ingenio de los artistas.",
+      "article": "Los ganadores del concurso de fallas han sido anunciados, destacando la creatividad y el ingenio de los artistas. Este evento anual no solo celebra la habilidad artística, sino que también fomenta la competencia amistosa entre los creadores. Este año, los jueces quedaron impresionados por la originalidad de las obras, que reflejan tanto la tradición como la innovación. Los premiados recibirán reconocimiento en la comunidad y contribuirán a elevar el perfil de las Fallas como una de las festividades más importantes de España.",
       "categoria": {
         "id": 2,
         "name": "Concursos",
         "description": "Competencias y premios relacionados con las Fallas.",
         "filter": "concursos"
-      }
+      },
+      "comments": [
+        {
+          "author": "Usuario5",
+          "text": "Los artistas son verdaderos genios, ¡sus obras son impresionantes!"
+        }
+      ]
     },
     {
       "id": 3,
@@ -33,12 +50,27 @@
       "date": "2025-03-03",
       "image": "https://picsum.photos/500/500",
       "content": "Exploramos las tradiciones que hacen de las Fallas una celebración única en el mundo.",
+      "article": "Exploramos las tradiciones que hacen de las Fallas una celebración única en el mundo. Desde la creación de las impresionantes figuras hasta la música y los fuegos artificiales, cada elemento tiene un significado profundo. Las Fallas no solo son un espectáculo visual, sino también una expresión de la identidad cultural de Valencia. Las familias se reúnen para participar en las festividades, transmitiendo sus costumbres de generación en generación, lo que fortalece el sentido de comunidad y pertenencia.",
       "categoria": {
         "id": 3,
         "name": "Tradiciones",
         "description": "Costumbres y rituales que forman parte de la celebración de las Fallas.",
         "filter": "tradiciones"
-      }
+      },
+      "comments": [
+        {
+          "author": "Usuario5",
+          "text": "Los artistas son verdaderos genios, ¡sus obras son impresionantes!"
+        },
+        {
+          "author": "Usuario6",
+          "text": "Es increíble ver cómo cada año superan las expectativas."
+        },
+        {
+          "author": "Usuario7",
+          "text": "Me gustaría ver más sobre el proceso de creación de las fallas."
+        }
+      ]
     },
     {
       "id": 4,
@@ -46,38 +78,62 @@
       "date": "2025-03-04",
       "image": "https://picsum.photos/500/500",
       "content": "Un vistazo a la rica historia de las Fallas y su evolución a lo largo de los años.",
+      "article": "Un vistazo a la rica historia de las Fallas y su evolución a lo largo de los años revela cómo esta festividad ha crecido en popularidad. Originadas como una celebración de la llegada de la primavera, las Fallas han pasado de ser simples hogueras a complejas obras de arte. A lo largo de los siglos, han incorporado elementos de la cultura local, convirtiéndose en un símbolo de la identidad valenciana. Hoy en día, atraen a miles de turistas, consolidándose como un evento de renombre internacional.",
       "categoria": {
         "id": 4,
         "name": "Historia",
         "description": "Información sobre el origen y la evolución de las Fallas en Valencia.",
         "filter": "historia"
-      }
+      },
+      "comments": [
+        {
+          "author": "Usuario10",
+          "text": "Es impresionante ver cómo ha evolucionado esta festividad."
+        },
+        {
+          "author": "Usuario11",
+          "text": "Me gustaría saber más sobre las primeras Fallas."
+        }
+      ]
     },
     {
       "id": 5,
       "title": "Conociendo a los Artistas Falleros",
       "date": "2025-03-05",
       "image": "https://picsum.photos/500/500",
+      "article": "Entrevistas con algunos de los artistas falleros más destacados y sus obras maestras revelan el arduo trabajo y la pasión detrás de cada figura. Estos creadores dedican meses a diseñar y construir sus fallas, utilizando materiales innovadores y técnicas tradicionales. A través de sus historias, podemos apreciar el compromiso y la dedicación que ponen en cada detalle. Cada artista tiene su propio estilo y visión, lo que enriquece la diversidad de las obras presentadas durante las festividades.",
       "content": "Entrevistas con algunos de los artistas falleros más destacados y sus obras maestras.",
       "categoria": {
         "id": 5,
         "name": "Artistas",
         "description": "Información sobre los artistas falleros y sus obras.",
         "filter": "artistas"
-      }
+      },
+      "comments": []
     },
     {
       "id": 6,
       "title": "Gastronomía en las Fallas: Platos Imperdibles",
       "date": "2025-03-06",
       "image": "https://picsum.photos/500/500",
+      "article": "Descubre los platos típicos que no te puedes perder durante las Fallas de Valencia. La gastronomía es una parte esencial de esta celebración, con delicias como la paella, buñuelos y churros que deleitan a los asistentes. Los restaurantes y bares de la ciudad ofrecen menús especiales que reflejan la riqueza culinaria de la región. Además, las tapas y los vinos locales complementan la experiencia, haciendo de cada comida un festín para los sentidos. La comida une a las personas, creando momentos memorables durante las festividades.",
       "content": "Descubre los platos típicos que no te puedes perder durante las Fallas de Valencia.",
       "categoria": {
         "id": 6,
         "name": "Gastronomía",
         "description": "Platos típicos y bebidas que se disfrutan durante las Fallas.",
         "filter": "gastronomia"
-      }
+      },
+      "comments": [
+        {
+          "author": "Usuario14",
+          "text": "No puedo esperar para probar la paella en las Fallas."
+        },
+        {
+          "author": "Usuario15",
+          "text": "Los buñuelos son mi debilidad, ¡son deliciosos!"
+        }
+      ]
     }
   ]
 }
