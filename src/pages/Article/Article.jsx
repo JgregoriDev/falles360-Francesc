@@ -17,7 +17,8 @@ const Article = () => {
     );
     setArticle(foundArticle);
     if (foundArticle) {
-      setTitle(foundArticle.title);
+      const id=foundArticle.id ?? 1;
+      setTitle(id);
     }
   }, [lastPart, news]);
 
