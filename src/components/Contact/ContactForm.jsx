@@ -1,6 +1,6 @@
 import React from "react";
 import Tooltip from "@components/Tooltip/Tooltip";
-import { validateEmail, validateName } from "./validators";
+import { validateEmail, validateName } from "@/utils/validators";
 
 const ContactForm = ({ formData, setFormData, errors, onSubmit }) => {
   const handleChange = (e) => {
@@ -143,3 +143,4 @@ const ContactForm = ({ formData, setFormData, errors, onSubmit }) => {
     </form>
   );
 };
+export default ContactForm;
