@@ -25,10 +25,17 @@
 }
 .container-center-site {
 }
-.button--outline {
+.button {
   cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 1.5625rem;
+}
+.button--outline {
   background-color: none;
-  text-align: center;
   border: 0.25rem solid var(--primaryColor);
   color: var(--primaryColor);
   background-color: transparent;
@@ -92,14 +99,14 @@
   font-size: 2rem;
 }
 .span {
-  transition: --num .5s;
+  transition: --num 0.5s;
   counter-reset: num var(--num);
 }
 
 .span::before {
   content: counter(num);
 }
-.span::after{
+.span::after {
   content: "+";
 }
 span:is(.ger)::after {
