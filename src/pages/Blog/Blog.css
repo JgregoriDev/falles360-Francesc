@@ -1,7 +1,7 @@
 .blog {
   min-height: 60vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column-reverse;
   gap: 20px;
   padding: 20px;
 }
@@ -30,6 +30,7 @@
   width: 100%;
 }
 .blog__categories {
+  order: 0;
 }
 .blog__categories--list {
   list-style: none;
@@ -109,9 +110,9 @@
   text-decoration: none;
   color: inherit;
 }
-@media (min-width: 768px) {
+@media (min-width: 954px) {
   .blog {
-    grid-template-columns: 1fr 150px;
+    flex-direction: row;
   }
   .blog__post {
     width: 100%;
