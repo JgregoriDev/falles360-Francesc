@@ -2,6 +2,7 @@ import { useEffect,useState } from "react";
 import "./Blog.css";
 import setTitle from "@/utils/setTitle";
 import getDataNews from "@/utils/getDataNews";
+import { Link } from "wouter";
 import Categories from "@/store/MockCategories.json";
 import News from "@/store/MockNews.json";
 const Blog = () => {
@@ -21,28 +22,28 @@ const Blog = () => {
           {/* News Feed */}
           {News.news.map((post) => (
             <article className="blog__post--item" key={post.id}>
-              <a title={post.title} className="blog__post--link" href={linkPost({post})}>
+              <Link title={post.title} className="blog__post--link" href={linkPost({post})}>
                 <h3 className="blog__post--title">{post.title}</h3>
-              </a>
-              <a title={post.title} href={linkPost({post})}>
+              </Link>
+              <Link title={post.title} href={linkPost({post})}>
                 <img
                   className="blog__post--image"
                   src={post.image}
                   loading="lazy"
                   alt={post.titulo}
                 />
-              </a>
+              </Link>
               <p className="blog__post--date">
                 {new Date(post.date).toLocaleDateString()}
               </p>
               <p className="blog__post--content">{post.content}</p>
-              <a
+              <Link
               title="Leer más"
                 className="blog__post--link"
                 href={linkPost({post})}
               >
                 Leer más...
-              </a>
+              </Link>
             </article>
           ))}
 
