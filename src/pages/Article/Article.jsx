@@ -1,4 +1,4 @@
-import "./Article.css";
+import style from "./Article.module.css";
 import MockNews from "@/store/MockNews.json";
 import { useEffect, useState } from "react";
 import { useLocation } from "wouter";
@@ -44,16 +44,16 @@ const Article = () => {
   }
 
   return (
-    <div className="Article">
+    <div className={style.Article}>
       <h2>Artículo {article ? article.title : "No encontrado"}</h2>
       {article && (
         <article>
           <img
-            className="Article__Hero"
+            className={style.Article__Hero}
             src={article.image}
             alt={article.title}
           />
-          <p className="Article__p">{article.article}</p>
+          <p className={Article.Article__p}>{article.article}</p>
         </article>
       )}
       {article && <Comments comments={article.comments} />}
