@@ -58,7 +58,7 @@ export const Footer = () => {
               </li>
                     <li className="footeer__nav-item">
                 <Link
-                  to="/falles360-Francesc/Blog"
+                  to="/falles360-Francesc/blog"
                   className="footer__nav-link"
                   title="Política de privacidad"
                 >
