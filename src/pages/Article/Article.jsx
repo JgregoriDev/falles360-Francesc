@@ -16,19 +16,21 @@ const Article = () => {
     const fetchArticle = async () => {
       setIsLoading(true);
       try {
-        await new Promise(resolve => setTimeout(resolve, 500));
+        await new Promise((resolve) => setTimeout(resolve, 500));
+        console.log(setTitle);
         
         const foundArticle = news.find(
-          (item) => item.title.toLowerCase().replace(/\s+/g, "-") === lastPart.toLowerCase()
+          (item) =>
+            item.title.toLowerCase().replace(/\s+/g, "-") ===
+            lastPart.toLowerCase()
         );
-        
         setArticle(foundArticle);
-        
+
         if (foundArticle) {
-          setTitle(foundArticle.title);
+          setTitle({title:foundArticle.title});
         }
       } catch (error) {
-        console.error('Error al cargar el artículo:', error);
+        console.error("Error al cargar el artículo:", error);
       } finally {
         setIsLoading(false);
       }
@@ -46,7 +48,11 @@ const Article = () => {
       <h2>Artículo {article ? article.title : "No encontrado"}</h2>
       {article && (
         <article>
-          <img className="Article__Hero" src={article.image} alt={article.title} />
+          <img
+            className="Article__Hero"
+            src={article.image}
+            alt={article.title}
+          />
           <p className="Article__p">{article.article}</p>
         </article>
       )}
