@@ -2,7 +2,7 @@ import { useEffect,useState } from "react";
 import "./Blog.css";
 import setTitle from "@/utils/setTitle";
 import getDataNews from "@/utils/getDataNews";
-import { Link } from "wouter";
+import {Link} from 'wouter';
 import Categories from "@/store/MockCategories.json";
 import News from "@/store/MockNews.json";
 const Blog = () => {
