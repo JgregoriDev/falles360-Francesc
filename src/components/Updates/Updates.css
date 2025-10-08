@@ -1,34 +1,35 @@
 .update__image {
-    position: relative;
-    height: auto;
-    width: 100%;
-    object-fit: cover;
+  position: relative;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
 }
 .updates {
-    position: relative;
-    height: 65vh; 
-    overflow: hidden;
+  display: none;
+  position: relative;
+  height: 65vh;
+  overflow: hidden;
 }
 
 .updates__p {
-font-size: 2.55rem;
+  font-size: 2.55rem;
 
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%; 
-    background-color: rgba(94, 94, 94, 0.5);
-    color: white;
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    padding: 20px; 
-    box-sizing: border-box; 
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(94, 94, 94, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
-@media screen and (min-width:992px) {
-    .updates{
-        display: block;
-    }
+@media screen and (min-width: 992px) {
+  .updates {
+    display: block;
+  }
 }
