@@ -10,7 +10,7 @@ const CommentForm = () => {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
-      <label className="mb-1" htmlFor="message">
+      <label className="mb-1 form__label" htmlFor="message">
         Introduce tu comentario:{" "}
         <Tooltip tooltipText={"Introduce tu comentario"} />
       </label>
@@ -30,7 +30,10 @@ const CommentForm = () => {
         ></textarea>
       </div>
 
-      <button type="submit" className=" mb-2 mt-2 button button-primary">
+      <button
+        type="submit"
+        className=" mb-2 mt-2 button button-primary w-resposive-form"
+      >
         Enviar datos
       </button>
     </form>
