@@ -1,7 +1,10 @@
 .form {
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
   justify-content: center;
+  align-items: center;
 }
 .form__container {
   display: flex;
@@ -9,10 +12,11 @@
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
+  width: 100%;
 }
 .form__user--avatar {
-  width: 125px;
-  height: 125px;
+  width: 95px;
+  height: 95px;
   border-radius: 50%;
 }
 .form__textArea {
