@@ -1,0 +1,97 @@
+.accordion {
+  --transition-time: 0.3s;
+  --border-radius: 10px;
+  --border-color: #3e3e3e6e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.accordion input {
+  display: none;
+}
+.accordion__title {
+  width: 85%;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.accordion__arrow {
+  font-size: 0.85rem;
+  fill: var(--fifthColor);
+  transition: transform var(--transition-time) ease;
+}
+.accordion__item {
+  width: 80%;
+}
+
+.accordion__item:hover .accordion__arrow {
+  transform: rotate(-90deg);
+}
+
+.accordion__answer {
+  min-height: 25px;
+  display: none;
+  overflow: hidden;
+  margin: 0;
+  transition: all 0.5s ease;
+}
+
+.accordion__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background: var(--primaryColor);
+  color: var(--fifthColor);
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #fff;
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition-time) ease,
+    transform var(--transition-time) ease;
+}
+
+.accordion__question:hover {
+  background-color: var(--primaryColorHover);
+}
+
+.accordion input:checked + .accordion__question {
+  background-color: var(--thirdColor);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.accordion input:checked + .accordion__question:hover {
+  background-color: var(--thirdColorHover);
+}
+
+.accordion input:checked + .accordion__question .accordion__arrow {
+  transform: rotate(-90deg);
+}
+
+.accordion input:checked ~ .accordion__answer {
+  display: block;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .accordion__item {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .accordion__question {
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+}
