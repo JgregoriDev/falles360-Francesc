@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import setTitle from '@/utils/setTitle';
+import setTitle from "@/utils/setTitle";
 
 export const PoliticaPrivadad = () => {
   useEffect(() => {
-    setTitle({title:"Política de Privacidad"});
-  }, []);  
+    setTitle({ title: "Política de Privacidad" });
+  }, []);
   // TODO: Corregir scroll por el cambio de pagina
   return (
     <div>
@@ -92,10 +92,75 @@ export const PoliticaPrivadad = () => {
         básicos de transparencia, informando de manera clara y accesible sobre
         la gestión de los datos personales recogidos a través de tu web o app .
       </p>
-      <p>Iconos obtenidos de <a href="https://fontawesome.com/" target="_blanck" title="Fonts awesome">Fonts awesome</a></p>
-      <p>Imagenes obtenidos de <a target="_blank" href="https://pixabay.com/" title="https://pixabay.com/">Pixabay</a> 
-      <a href="https://gemini.google.com/" target="_blank" title="Gemini">Gemini/</a> y la de los usuarios 
-      <a target="_blank" href="https://thispersonnotexist.org/" title="thispersonnotexist"> thispersonnotexist</a></p>
+      <h3>12. LimitaciÓn de responsabilidad.</h3>
+      <p>
+        Se declara que no se asume responsabilidad por:
+        <ul>
+          <li>Fallos técnicos, interrupciones o errores en la aplicación.</li>
+          <li>
+            La organización de eventos o la venta de entradas gestionadas por
+            las comisiones falleras.
+          </li>
+          <li>
+            Daños directos, indirectos o accidentales derivados del uso de la
+            aplicación.
+          </li>
+        </ul>
+      </p>
+      <h3>13. SUSPENSIÓN O CANCELACIÓN DE CUENTAS</h3>
+      <p>
+        Se otorga al Usuario una licencia de uso de la aplicación que es no
+        exclusiva, gratuita, destinada a uso personal, limitada al territorio
+        nacional y de duración indefinida. Esta licencia también se aplica de la
+        misma manera a las actualizaciones y mejoras que se realicen en la
+        aplicación. Falles 360 se reserva el derecho de revocar estas licencias
+        de uso de forma unilateral en cualquier momento.
+      </p>
+      <h3>14. MODIFICACIONES DE LOS TÉRMINOS Y CONDICIONES</h3>
+      <p>
+        Podemos, sin que esto implique ninguna obligación de su parte, modificar
+        estas Condiciones de uso en cualquier momento. Si continúa usando la
+        aplicación tras cualquier cambio en estas Condiciones, su uso continuado
+        se considerará como aceptación de dichas modificaciones. Si no está de
+        acuerdo con estas condiciones ni acepta estar sujeto a ellas, no debe
+        utilizar la aplicación ni descargar o utilizar software relacionado. Le
+        informaremos sobre los cambios relevantes a través de la App o por
+        correo electrónico. El uso de la aplicación es bajo su propia
+        responsabilidad.
+      </p>
+      <h3>15. Obtencion de recursos</h3>
+      <p>
+        Iconos obtenidos de{" "}
+        <a
+          href="https://fontawesome.com/"
+          target="_blanck"
+          title="Fonts awesome"
+        >
+          Fonts awesome
+        </a>
+      </p>
+      <p>
+        Imagenes obtenidos de{" "}
+        <a
+          target="_blank"
+          href="https://pixabay.com/"
+          title="https://pixabay.com/"
+        >
+          Pixabay
+        </a>
+        <a href="https://gemini.google.com/" target="_blank" title="Gemini">
+          Gemini/
+        </a>{" "}
+        y la de los usuarios
+        <a
+          target="_blank"
+          href="https://thispersonnotexist.org/"
+          title="thispersonnotexist"
+        >
+          {" "}
+          thispersonnotexist
+        </a>
+      </p>
     </div>
   );
 };
