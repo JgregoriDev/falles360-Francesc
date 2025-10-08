@@ -18,7 +18,7 @@ const Article = () => {
       try {
         await new Promise((resolve) => setTimeout(resolve, 500));
         console.log(setTitle);
-        
+
         const foundArticle = news.find(
           (item) =>
             item.title.toLowerCase().replace(/\s+/g, "-") ===
@@ -27,7 +27,7 @@ const Article = () => {
         setArticle(foundArticle);
 
         if (foundArticle) {
-          setTitle({title:foundArticle.title});
+          setTitle({ title: foundArticle.title });
         }
       } catch (error) {
         console.error("Error al cargar el artículo:", error);
@@ -56,7 +56,11 @@ const Article = () => {
           <p className={Article.Article__p}>{article.article}</p>
         </article>
       )}
-      {article && <Comments comments={article.comments} />}
+      {article.comments?.legth == 0 ? (
+        <p>No se han encontrado comentarios</p>
+      ) : (
+        <Comments comments={article.comments} />
+      )}
     </div>
   );
 };
