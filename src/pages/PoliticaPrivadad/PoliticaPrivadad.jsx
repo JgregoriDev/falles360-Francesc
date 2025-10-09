@@ -107,7 +107,7 @@ export const PoliticaPrivadad = () => {
           </li>
         </ul>
       </p>
-      <h3>13. SUSPENSIÓN O CANCELACIÓN DE CUENTAS</h3>
+      <h3>13. Suspensión o cancelación de cuentas.</h3>
       <p>
         Se otorga al Usuario una licencia de uso de la aplicación que es no
         exclusiva, gratuita, destinada a uso personal, limitada al territorio
@@ -116,7 +116,7 @@ export const PoliticaPrivadad = () => {
         aplicación. Falles 360 se reserva el derecho de revocar estas licencias
         de uso de forma unilateral en cualquier momento.
       </p>
-      <h3>14. MODIFICACIONES DE LOS TÉRMINOS Y CONDICIONES</h3>
+      <h3>14. Modificaciones de los Términos y condiciones.</h3>
       <p>
         Podemos, sin que esto implique ninguna obligación de su parte, modificar
         estas Condiciones de uso en cualquier momento. Si continúa usando la
@@ -128,7 +128,7 @@ export const PoliticaPrivadad = () => {
         correo electrónico. El uso de la aplicación es bajo su propia
         responsabilidad.
       </p>
-      <h3>15. Obtencion de recursos</h3>
+      <h3>15. Obtención de recursos</h3>
       <p>
         Iconos obtenidos de{" "}
         <a
@@ -147,7 +147,7 @@ export const PoliticaPrivadad = () => {
           title="https://pixabay.com/"
         >
           Pixabay
-        </a>
+        </a>{" "}
         <a href="https://gemini.google.com/" target="_blank" title="Gemini">
           Gemini/
         </a>{" "}
